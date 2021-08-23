@@ -1,0 +1,173 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  margin: 0;
+}
+
+/* navbar */
+
+/* Home */
+
+.main{
+  background-image: url("./R.jpeg");
+  height: 100vh;
+  width: 100vw;
+  color: antiquewhite;
+}
+
+.first{
+  margin: 0 auto;
+  padding-top: 20rem;
+  width: 500px;
+  height: 200px;
+  align-self: center;
+}
+
+.first-a{
+    font-size: 5rem;
+    color: blueviolet;
+}
+
+.first-b{
+  font-size: 3rem;
+  color: ;
+}
+
+.first-c{
+  font-size: 2rem;
+}
+
+/* Intro */
+
+.intro {
+  display: flex;
+  background-color: rgb(181, 181, 241);
+  justify-content: space-around;
+}
+
+.intro-text{
+  background-color: rgb(181, 181, 241);
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.intro img {
+  height: 30rem;
+  width: 30rem;
+  margin: 1rem;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+/* Skills */
+
+
+
+/* Projects */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 5rem 3rem;
+}
+.grid-item {
+  background-color: rgba(152, 226, 208, 0.8);
+  border: 2px solid rgba(0, 0, 0, 0.8);
+  font-family: garamond;
+  font-size: 1rem;
+  height: 15rem;
+  text-align: center;
+}
+
+.projects-heading {
+  font-size: 3rem;
+  text-decoration: underline;
+  font-weight: bold;
+  font-family: monospace;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.project-name {
+  color: #0a1931;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin: 2rem auto;
+}
+
+.project-desc {
+  color: #21094e;
+  font-size: 1.4rem;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+
+
+/* contact */
+
+.contact {
+  background-color: black;
+}
+
+form {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.feedback-input {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #cc6666;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #cc4949;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  width: 100%;
+  background: #cc6666;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: white;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 30px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: #cc4949;
+}
