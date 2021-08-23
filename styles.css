@@ -12,6 +12,37 @@ body {
 }
 
 /* navbar */
+.sticky-section{
+  overflow:hidden;
+  background-color:#1a3a4d; 
+  width:100%; 
+  color:white; 
+  position: sticky;
+  top: 0px;
+}
+
+nav a{
+  float:right;
+  text-decoration:none;
+  color:white;
+  font-size:1.2rem; 
+  height: 70px;
+  padding: 20px 30px; 
+  transition: all 0.5s ease 0s;
+}
+
+nav a:hover{
+  background-color:#002e5b; 
+  color:wheat; 
+}
+
+.resume{
+  float: left;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+}
+
+
 
 /* Home */
 
@@ -24,10 +55,9 @@ body {
 
 .first{
   margin: 0 auto;
-  padding-top: 20rem;
-  width: 500px;
+  padding-top: 15rem;
+  width: 400px;
   height: 200px;
-  align-self: center;
 }
 
 .first-a{
@@ -37,13 +67,25 @@ body {
 
 .first-b{
   font-size: 3rem;
-  color: ;
+  color: azure;
 }
 
 .first-c{
+  padding-bottom: 2rem;
   font-size: 2rem;
+  color: rgb(211, 236, 236);
+  border-bottom: 4px solid blueviolet;
 }
 
+.second{
+  margin-top: 10rem;
+  text-align: center;
+  margin-top: 30rem;
+  font-size: 1.5rem;
+  color: rgb(0, 255, 0);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
 /* Intro */
 
 .intro {
@@ -54,10 +96,10 @@ body {
 
 .intro-text{
   background-color: rgb(181, 181, 241);
+  text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  margin: 1rem;
-  padding: 2rem;
+  padding: 5rem;
 }
 
 .intro img {
@@ -77,19 +119,20 @@ body {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  row-gap: 1rem;
+  column-gap: 1rem;
   margin: 5rem 3rem;
 }
 .grid-item {
   background-color: rgba(152, 226, 208, 0.8);
   border: 2px solid rgba(0, 0, 0, 0.8);
-  font-family: garamond;
-  font-size: 1rem;
   height: 15rem;
   text-align: center;
+  border-radius: 20px;
 }
 
 .projects-heading {
-  font-size: 3rem;
+  font-size: 4rem;
   text-decoration: underline;
   font-weight: bold;
   font-family: monospace;
@@ -99,7 +142,7 @@ body {
 
 .project-name {
   color: #0a1931;
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: bold;
   margin: 2rem auto;
 }
@@ -117,6 +160,13 @@ body {
 
 .contact {
   background-color: black;
+}
+
+.contact h2{
+  padding-top: 2rem;
+  color: rgb(211, 143, 202);
+  text-align: center;
+  font-size: 3rem;
 }
 
 form {
@@ -171,3 +221,4 @@ textarea {
 [type="submit"]:hover {
   background: #cc4949;
 }
+
