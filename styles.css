@@ -1,54 +1,59 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
 /* navbar */
-.sticky-section{
-  overflow:hidden;
-  background-color:#1a3a4d; 
-  width:100%; 
-  color:white; 
+.sticky-section {
+  overflow: hidden;
+  background-color: #1a3a4d;
+  width: 100%;
+  color: white;
   position: sticky;
   top: 0px;
 }
 
-nav a{
-  float:right;
-  text-decoration:none;
-  color:white;
-  font-size:1.2rem; 
+nav a {
+  float: right;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
   height: 70px;
-  padding: 20px 30px; 
+  padding: 20px 30px;
   transition: all 0.5s ease 0s;
 }
 
-nav a:hover{
-  background-color:#002e5b; 
-  color:wheat; 
+nav a:hover {
+  background-color: #002e5b;
+  color: wheat;
 }
 
-.resume{
+.github {
+  display: flex;
+  justify-content: space-evenly;
   float: left;
   font-size: 1.8rem;
   letter-spacing: 2px;
 }
 
-
+.github img {
+  height: 45px;
+  width: 55px;
+  border-radius: 5px;
+  margin-left: 1rem;
+}
 
 /* Home */
 
-.main{
+.main {
   background-image: url("./R.jpeg");
   height: 95vh;
   width: 100vw;
   color: antiquewhite;
 }
 
-.first{
+.first {
   margin: 0 auto;
   padding-top: 8%;
   width: 400px;
@@ -56,31 +61,59 @@ nav a:hover{
   font-family: cursive;
 }
 
-.first-a{
-    font-size: 5rem;
-    color: blueviolet;
+.first-a {
+  font-size: 5rem;
+  color: blueviolet;
 }
 
-.first-b{
+.first-b {
   font-size: 3rem;
   color: azure;
 }
 
-.first-c{
+.first-c {
   padding-bottom: 2rem;
   font-size: 2rem;
   color: rgb(211, 236, 236);
   border-bottom: 4px solid blueviolet;
 }
 
-.second{
+.second {
   text-align: center;
-  margin-top: 25%;
+  margin-top: 10%;
   font-size: 1.5rem;
   color: rgb(0, 255, 0);
   font-weight: bold;
   letter-spacing: 2px;
 }
+
+.myButton {
+	background-color:#e43a2a;
+	border-radius:4px;
+  color: white;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:25px;
+  border: 2px solid white;
+	padding:10px 20px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #b23e35;
+  margin-left: 55%;
+  margin-top: 18%;
+  box-shadow: 4px 3px 8px 1px #9b2525;
+}
+.myButton:hover {
+	background-color:#eb675e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
 /* Intro */
 
 .intro {
@@ -88,20 +121,29 @@ nav a:hover{
   background-color: #1d2727;
   color: #48bbb5;
   justify-content: space-around;
-  font-family: 'Roboto Slab', serif;
-  margin: 0;
+  font-family: "Roboto Slab", serif;
 }
 
-.intro-text{
+.intro-head {
+  font-size: 3rem;
+  text-decoration: underline;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #bbe7e5;
+}
+
+.intro-text {
   background-color: transparent;
   text-align: center;
   font-size: 1.8rem;
   font-weight: bold;
   padding: 6rem;
+  padding-top: 3rem;
 }
 
 .intro img {
-  height: 40rem;
+  height: 45rem;
   width: 35rem;
   margin: 2rem;
   border: 2px solid blue;
@@ -110,24 +152,61 @@ nav a:hover{
 
 /* Skills */
 
+.skills {
+  background-color: rgba(130, 204, 185, 0.8);
+  font-family: "Roboto Slab", serif;
+  padding: 4rem 0;
+}
 
+.skills-text {
+  display: flex;
+}
+
+.skills-heading {
+  text-align: center;
+  font-size: 4rem;
+  padding-top: 1rem;
+  text-decoration: underline;
+}
+
+.skill-card {
+  margin: 2rem;
+  background-color: salmon;
+  height: 350px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 5px 4px 8px 1px #746f6f;
+}
+
+.skill-name {
+  font-size: 3rem;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+li {
+  font-size: 2rem;
+  padding-left: 2rem;
+}
 
 /* Projects */
-.projects{
-  font-family: 'Roboto Slab', serif;
-  background-color: #30475E;
-  margin: 0;
+
+.projects {
+  font-family: "Roboto Slab", serif;
+  background-color: #30475e;
 }
 
 .projects-heading {
-  font-size: 4rem;  
+  font-size: 4rem;
   text-decoration: underline;
   color: #dcf1f0;
-  padding: 1rem 0;
+  padding-top: 4rem;
   text-align: center;
-  margin-top: 2rem;
 }
-
 
 .grid-container {
   display: grid;
@@ -140,8 +219,10 @@ nav a:hover{
   background-color: rgba(152, 226, 208, 0.8);
   border: 2px solid rgba(0, 0, 0, 0.8);
   height: 15rem;
+  margin: 1rem;
   text-align: center;
   border-radius: 20px;
+  box-shadow: 5px 4px 8px 1px #95c0c0;
 }
 
 .project-name {
@@ -153,11 +234,10 @@ nav a:hover{
 
 .project-desc {
   font-size: 1.4rem;
+  font-weight: 600;
   margin-left: 8%;
   margin-right: 8%;
 }
-
-
 
 /* contact */
 
@@ -165,7 +245,7 @@ nav a:hover{
   background-color: black;
 }
 
-.contact h2{
+.contact h2 {
   padding-top: 2rem;
   color: rgb(211, 143, 202);
   text-align: center;
@@ -224,4 +304,3 @@ textarea {
 [type="submit"]:hover {
   background: #cc4949;
 }
-

@@ -17,36 +17,46 @@
 
   <div class="sticky-section">
     <nav>
-      <a class="resume" href="https://drive.google.com/file/d/1YwT4s3vg5co1AGdN-TABs_qZEhYiF-e6/view?ths=true">
+      <a class="github" href="https://github.com/onlykingKD">
         @onlykingKD
+        <img src="./github1.png" alt="">
       </a>
-      <a href="#">Projects</a>
-      <a href="#">Skills</a>
-      <a href='#'>About Me</a>
-      <a href="#">Home</a>
-      <a href="#">Contact Me</a>
+
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href='#about'>About Me</a>
+      <a href="#home">Home</a>
+      <a href="#contactme">Contact Me</a>
     </nav>
   </div>
 
   <!-- About -->
 
-  <div class="main">
+  <div class="main" id="home">
     <div class="first">
       <h1 class="first-a">Hello,</h1><br />
       <h3 class="first-b">I am Kaustubh Dwivedi...</h3><br />
       <h4 class="first-c">I am a programmer 😀</h4>
     </div>
 
+    <a href="https://drive.google.com/file/d/1YwT4s3vg5co1AGdN-TABs_qZEhYiF-e6/view?usp=sharing" class="myButton">My
+      Resume</a>
+
     <div class="second">
       Start Scrolling and take a look at my Portfolio, <br>
       and let's create something big togther !
     </div>
+
   </div>
 
   <!-- Intro -->
 
-  <div class="intro">
+  <div class="intro" id="about">
+
     <div class="intro-text">
+      <div class="intro-head">
+        About Me
+      </div>
       <p>
         I am currently a pre-final year student pursuing Bachelor of Technology
         in the field of Computer Science and Engineering from VIT Vellore.
@@ -78,13 +88,14 @@
 
   <!-- Skills -->
 
-  <!-- <div class="skills">
+  <div class="skills" id="skills">
     <div class="skills-heading">
-      MY SKILLS
+      My Skills
     </div>
-    <div class="list">
-      <ul>
-        Languages
+    <div class="skills-text">
+
+      <div class="skill-card">
+        <div class="skill-name"> Languages </div>
         <ul>
           <li>C++</li>
           <li>Python</li>
@@ -92,21 +103,47 @@
           <li>Java</li>
           <li>Javascript</li>
         </ul>
-      </ul>
-      <ul>
-        FRONTEND
-        <li>HTML + CSS</li>
-        <li>Javascript</li>
-        <li>Bootstrap</li>
-        <li>MaterialUI</li>
-        <li>ReactJS</li>
-      </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-name"> Frontend </div>
+        <ul>
+          <li>HTML/CSS</li>
+          <li>Javascript</li>
+          <li>Bootstrap</li>
+          <li>MaterialUI</li>
+          <li>ReactJS</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-name"> Data Science </div>
+        <ul>
+          <li>Machine Learning</li>
+          <li>Natural Lang. Proc.</li>
+          <li>Neural Networks</li>
+          <li>Tensorflow</li>
+          <li>Jupyter Notebooks</li>
+        </ul>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-name"> Other Skills </div>
+        <ul>
+          <li>Linux</li>
+          <li>GIT</li>
+          <li>AWS</li>
+          <li>MySQL</li>
+          <li>OOPS+OS+DBMS</li>
+        </ul>
+      </div>
+
     </div>
-  </div> -->
+  </div>
 
   <!-- Projects -->
 
-  <div class="projects">
+  <div class="projects" id="projects">
     <div class="projects-heading">
       My Few Projects
     </div>
@@ -150,7 +187,6 @@
         <div class="project-desc">
           Developed a ML Model using Keras that can be used to segregate the
           images of notes based imagesfrom a vast amount of random images
-
         </div>
       </div>
 
@@ -164,7 +200,7 @@
   </div>
 
   <!-- Contact -->
-  <div class="contact">
+  <div class="contact" id="contactme">
     <h2>Contact Me</h2>
     <form>
       <input name="name" type="text" class="feedback-input" placeholder="Name" />
