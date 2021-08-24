@@ -304,3 +304,21 @@ textarea {
 [type="submit"]:hover {
   background: #cc4949;
 }
+
+@media only screen and (max-width: 1536px){
+  .myButton{
+    margin-top: 300px;
+  }
+
+  .second {
+    margin-top: 100px;
+  }
+
+  .skill-3 {
+    font-size: 28px;
+  }
+
+  .project-1 {
+    font-size: 30px;
+  }
+}
