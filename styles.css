@@ -51,7 +51,7 @@ nav a:hover {
   color: antiquewhite;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .first {
@@ -172,7 +172,7 @@ nav a:hover {
 .skill-card {
   margin: 2rem;
   background-color: salmon;
-  height: 350px;
+  min-height: 350px;
   width: 400px;
   border-radius: 15px;
   box-shadow: 5px 4px 8px 1px #746f6f;
@@ -218,7 +218,7 @@ li {
 .grid-item {
   background-color: rgba(152, 226, 208, 0.8);
   border: 2px solid rgba(0, 0, 0, 0.8);
-  height: 15rem;
+  min-height: 15rem;
   margin: 1rem;
   text-align: center;
   border-radius: 20px;
