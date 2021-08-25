@@ -48,17 +48,16 @@ nav a:hover {
 
 .main {
   background-image: url("./images/R.jpeg");
-  height: 95vh;
-  width: 100vw;
   color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .first {
-  margin: 0 auto;
-  padding-top: 8%;
-  width: 400px;
-  height: 200px;
+  margin: 0 auto;    
   font-family: cursive;
+  margin-top: 10rem;
 }
 
 .first-a {
@@ -80,28 +79,30 @@ nav a:hover {
 
 .second {
   text-align: center;
-  margin-top: 10%;
+  margin-top: 8rem;
   font-size: 1.5rem;
   color: rgb(0, 255, 0);
   font-weight: bold;
   letter-spacing: 2px;
 }
 
+
 .myButton {
-	background-color:#e43a2a;
+  text-align: center;
+  height: 50px;
+  width: 180px;
+	background-color:#d82d17;
 	border-radius:4px;
-  color: white;
-	display:inline-block;
 	cursor:pointer;
-	font-family:Arial;
 	font-size:25px;
   border: 2px solid white;
 	padding:10px 20px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #b23e35;
-  margin-left: 55%;
-  margin-top: 18%;
+  margin: 6rem auto;
   box-shadow: 4px 3px 8px 1px #9b2525;
+}
+
+.myButton a{
+  color: white;
 }
 .myButton:hover {
 	background-color:#eb675e;
@@ -110,7 +111,6 @@ nav a:hover {
 	position:relative;
 	top:1px;
 }
-
 
 
 
@@ -305,7 +305,7 @@ textarea {
   background: #cc4949;
 }
 
-@media only screen and (max-width: 1536px){
+/* @media only screen and (max-width: 1536px){
   .myButton{
     margin-top: 300px;
   }
@@ -321,4 +321,4 @@ textarea {
   .project-1 {
     font-size: 30px;
   }
-}
+} */
