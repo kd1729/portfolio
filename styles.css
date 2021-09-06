@@ -4,6 +4,14 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background-color: #746f6f;
+}
+
 /* navbar */
 .sticky-section {
   overflow: hidden;
@@ -33,7 +41,7 @@ nav a:hover {
   display: flex;
   justify-content: space-evenly;
   float: left;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   letter-spacing: 2px;
 }
 
@@ -88,16 +96,15 @@ nav a:hover {
 
 
 .myButton {
+  font-family: "Roboto Slab", serif;
+  display: inline;
   text-align: center;
-  height: 50px;
-  width: 180px;
 	background-color:#d82d17;
-	border-radius:4px;
+	border-radius:10px;
 	cursor:pointer;
 	font-size:25px;
   border: 2px solid white;
 	padding:10px 20px;
-  margin: 6rem auto;
   box-shadow: 4px 3px 8px 1px #9b2525;
 }
 
@@ -118,14 +125,16 @@ nav a:hover {
 
 .intro {
   display: flex;
-  background-color: #1d2727;
-  color: #48bbb5;
+  background-color: #342038;
+  color: #d8d5c5;
   justify-content: space-around;
   font-family: "Roboto Slab", serif;
+  margin: 5rem 15rem;
+  border-radius: 15px;
 }
 
 .intro-head {
-  font-size: 3rem;
+  font-size: 2rem;
   text-decoration: underline;
   padding-top: 2rem;
   margin-bottom: 2rem;
@@ -135,15 +144,16 @@ nav a:hover {
 
 .intro-text {
   background-color: transparent;
+  letter-spacing: 1.2px;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: bold;
   padding: 6rem;
   padding-top: 3rem;
 }
 
 .intro img {
-  height: 45rem;
+  height: 40rem;
   width: 35rem;
   margin: 2rem;
   border: 2px solid blue;
@@ -153,7 +163,7 @@ nav a:hover {
 /* Skills */
 
 .skills {
-  background-color: rgba(130, 204, 185, 0.8);
+  background-color: #1A1A2E;
   font-family: "Roboto Slab", serif;
   padding: 4rem 0;
 }
@@ -163,23 +173,32 @@ nav a:hover {
 }
 
 .skills-heading {
+  color: #DBCBBD;
   text-align: center;
-  font-size: 4rem;
+  font-size: 3.2rem;
   padding-top: 1rem;
   text-decoration: underline;
 }
 
 .skill-card {
   margin: 2rem;
-  background-color: salmon;
+  background-color: #16213E;
+  color: #f63555;
   min-height: 350px;
   width: 400px;
   border-radius: 15px;
   box-shadow: 5px 4px 8px 1px #746f6f;
 }
 
+.skill-card:hover{
+  position: relative;
+  bottom: 7px;
+  left: 5px;
+  box-shadow: 10px 8px 8px 1px #746f6f;
+}
+
 .skill-name {
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding-left: 1rem;
   padding-top: 1rem;
 }
@@ -197,11 +216,11 @@ li {
 
 .projects {
   font-family: "Roboto Slab", serif;
-  background-color: #30475e;
+  background-color: #322b4b ;
 }
 
 .projects-heading {
-  font-size: 4rem;
+  font-size: 3.5rem;
   text-decoration: underline;
   color: #dcf1f0;
   padding-top: 4rem;
@@ -216,23 +235,32 @@ li {
   padding: 4rem 3rem;
 }
 .grid-item {
-  background-color: rgba(152, 226, 208, 0.8);
+
+  background-color: #345164;
   border: 2px solid rgba(0, 0, 0, 0.8);
   min-height: 15rem;
   margin: 1rem;
   text-align: center;
   border-radius: 20px;
-  box-shadow: 5px 4px 8px 1px #95c0c0;
+  box-shadow: 5px 4px 8px 1px #263131;
+}
+
+.grid-item:hover{
+  position: relative;
+  bottom: 7px;
+  left: 5px;
+  box-shadow: 15px 10px 8px 1px #263131;
 }
 
 .project-name {
-  color: #0a1931;
-  font-size: 2rem;
+  color: #E6F5FF;
+  font-size: 1.8rem;
   font-weight: 600;
   margin: 2rem auto;
 }
 
 .project-desc {
+  color: #E6F5FF;
   font-size: 1.4rem;
   font-weight: 600;
   margin-left: 8%;
