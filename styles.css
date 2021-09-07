@@ -216,13 +216,13 @@ li {
 
 .projects {
   font-family: "Roboto Slab", serif;
-  background-color: #322b4b ;
+  background-color: #3e3853 ;
 }
 
 .projects-heading {
   font-size: 3.5rem;
   text-decoration: underline;
-  color: #dcf1f0;
+  color: #e6d5d5;
   padding-top: 4rem;
   text-align: center;
 }
@@ -236,7 +236,7 @@ li {
 }
 .grid-item {
   letter-spacing: 1.1px;
-  background-color: #1e272c;
+  background-color: #222c31;
   border: 2px solid rgba(0, 0, 0, 0.8);
   min-height: 15rem;
   margin: 1rem;
@@ -253,14 +253,14 @@ li {
 }
 
 .project-name {
-  color: #E6F5FF;
+  color: #c06448;
   font-size: 1.8rem;
   font-weight: 600;
   margin: 2rem auto;
 }
 
 .project-desc {
-  color: #e1e2b7;
+  color: #fffffff1;
   font-size: 1.4rem;
   font-weight: 600;
   margin-left: 8%;
