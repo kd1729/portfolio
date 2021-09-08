@@ -163,7 +163,7 @@ nav a:hover {
 /* Skills */
 
 .skills {
-  background-color: #1A1A2E;
+  background-color: #a53b31;
   font-family: "Roboto Slab", serif;
   padding: 4rem 0;
 }
@@ -182,19 +182,19 @@ nav a:hover {
 
 .skill-card {
   margin: 2rem;
-  background-color: #16213E;
-  color: #f63555;
+  background-color: #79762f;
+  color: #fae1e1;
   min-height: 350px;
   width: 400px;
   border-radius: 15px;
-  box-shadow: 5px 4px 8px 1px #746f6f;
+  box-shadow: 5px 4px 8px 1px #92923d;
 }
 
 .skill-card:hover{
   position: relative;
   bottom: 7px;
   left: 5px;
-  box-shadow: 10px 8px 8px 1px #746f6f;
+  box-shadow: 10px 8px 8px 1px #92923d;
 }
 
 .skill-name {
@@ -333,7 +333,7 @@ textarea {
   background: #cc4949;
 }
 
-/* @media only screen and (max-width: 1536px){
+@media only screen and (max-width: 1536px){
   .myButton{
     margin-top: 300px;
   }
@@ -349,4 +349,4 @@ textarea {
   .project-1 {
     font-size: 30px;
   }
-} */
+}
