@@ -4,18 +4,18 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
-body{
-  background-color: #746f6f;
+body {
+  background-color: #fff;
 }
 
 /* navbar */
 .sticky-section {
   overflow: hidden;
-  background-color: #1a3a4d;
+  background-color: #070707;
   width: 100%;
   color: white;
   position: sticky;
@@ -33,8 +33,8 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #002e5b;
-  color: wheat;
+  background-color: #cc6666;
+  color: #fff;
 }
 
 .github {
@@ -63,14 +63,14 @@ nav a:hover {
 }
 
 .first {
-  margin: 0 auto;    
+  margin: 0 auto;
   font-family: cursive;
   margin-top: 10rem;
 }
 
 .first-a {
   font-size: 5rem;
-  color: blueviolet;
+  color: #fff;
 }
 
 .first-b {
@@ -81,15 +81,15 @@ nav a:hover {
 .first-c {
   padding-bottom: 2rem;
   font-size: 2rem;
-  color: rgb(211, 236, 236);
-  border-bottom: 4px solid blueviolet;
+  color:#fff;
+  border-bottom: 4px solid #fff;
 }
 
 .second {
   text-align: center;
   margin-top: 8rem;
   font-size: 1.5rem;
-  color: rgb(0, 255, 0);
+  color: #fff;
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -99,24 +99,26 @@ nav a:hover {
   font-family: "Roboto Slab", serif;
   display: inline;
   text-align: center;
-	background-color:#d82d17;
-	border-radius:10px;
-	cursor:pointer;
-	font-size:25px;
+  background-color: #cc6666;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 25px;
   border: 2px solid white;
-	padding:10px 20px;
-  box-shadow: 4px 3px 8px 1px #9b2525;
+  padding: 10px 20px;
+  box-shadow: 4px 3px 8px 1px #cc6666;
 }
 
-.myButton a{
+.myButton a {
   color: white;
 }
+
 .myButton:hover {
-	background-color:#eb675e;
+  background-color:#cc4949;
 }
+
 .myButton:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
 
 
@@ -125,8 +127,8 @@ nav a:hover {
 
 .intro {
   display: flex;
-  background-color: #342038;
-  color: #d8d5c5;
+  background-color: #e9e9e9;
+  color: #747474;
   justify-content: space-around;
   font-family: "Roboto Slab", serif;
   margin: 5rem 15rem;
@@ -139,7 +141,7 @@ nav a:hover {
   padding-top: 2rem;
   margin-bottom: 2rem;
   text-align: center;
-  color: #bbe7e5;
+  color: #747474;
 }
 
 .intro-text {
@@ -156,14 +158,14 @@ nav a:hover {
   height: 40rem;
   width: 35rem;
   margin: 2rem;
-  border: 2px solid blue;
+  border: 1px solid #e9e9e9;
   border-radius: 10px;
 }
 
 /* Skills */
 
 .skills {
-  background-color: #a53b31;
+  background-color: #070707;
   font-family: "Roboto Slab", serif;
   padding: 4rem 0;
 }
@@ -173,7 +175,7 @@ nav a:hover {
 }
 
 .skills-heading {
-  color: #DBCBBD;
+  color: #fff;
   text-align: center;
   font-size: 3.2rem;
   padding-top: 1rem;
@@ -182,19 +184,19 @@ nav a:hover {
 
 .skill-card {
   margin: 2rem;
-  background-color: #79762f;
-  color: #fae1e1;
+  background-color: rgb(22, 22, 22);
+  color: #fff;
   min-height: 350px;
   width: 400px;
   border-radius: 15px;
-  box-shadow: 5px 4px 8px 1px #92923d;
+  box-shadow: 5px 4px 8px 1px rgb(34, 34, 34);
 }
 
-.skill-card:hover{
+.skill-card:hover {
   position: relative;
   bottom: 7px;
   left: 5px;
-  box-shadow: 10px 8px 8px 1px #92923d;
+  box-shadow: 10px 8px 8px 1px rgb(34, 34, 34);
 }
 
 .skill-name {
@@ -216,13 +218,13 @@ li {
 
 .projects {
   font-family: "Roboto Slab", serif;
-  background-color: #3e3853 ;
+  background-color: #fff;
 }
 
 .projects-heading {
   font-size: 3.5rem;
   text-decoration: underline;
-  color: #e6d5d5;
+  color: #747474;
   padding-top: 4rem;
   text-align: center;
 }
@@ -234,6 +236,7 @@ li {
   column-gap: 1rem;
   padding: 4rem 3rem;
 }
+
 .grid-item {
   letter-spacing: 1.1px;
   background-color: #222c31;
@@ -245,7 +248,7 @@ li {
   box-shadow: 5px 4px 8px 1px #263131;
 }
 
-.grid-item:hover{
+.grid-item:hover {
   position: relative;
   bottom: 7px;
   left: 5px;
@@ -253,7 +256,7 @@ li {
 }
 
 .project-name {
-  color: #c06448;
+  color: #a7a7a7;
   font-size: 1.8rem;
   font-weight: 600;
   margin: 2rem auto;
@@ -275,7 +278,7 @@ li {
 
 .contact h2 {
   padding-top: 2rem;
-  color: rgb(211, 143, 202);
+  color: #fff;
   text-align: center;
   font-size: 3rem;
 }
@@ -293,7 +296,7 @@ form {
   border-radius: 5px;
   line-height: 22px;
   background-color: transparent;
-  border: 2px solid #cc6666;
+  border: 2px solid #fff;
   transition: all 0.3s;
   padding: 13px;
   margin-bottom: 15px;
@@ -304,7 +307,7 @@ form {
 }
 
 .feedback-input:focus {
-  border: 2px solid #cc4949;
+  border: 2px solid #fff;
 }
 
 textarea {
@@ -329,12 +332,13 @@ textarea {
   margin-top: -4px;
   font-weight: 700;
 }
+
 [type="submit"]:hover {
   background: #cc4949;
 }
 
-@media only screen and (max-width: 1536px){
-  .myButton{
+@media only screen and (max-width: 1536px) {
+  .myButton {
     margin-top: 300px;
   }
 
