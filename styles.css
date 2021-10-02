@@ -9,13 +9,13 @@ html{
 }
 
 body{
-  background-color: #746f6f;
+  background-color: crimson;
 }
 
 /* navbar */
 .sticky-section {
   overflow: hidden;
-  background-color: #1a3a4d;
+  background-color: rgb(19, 17, 17);
   width: 100%;
   color: white;
   position: sticky;
@@ -125,12 +125,13 @@ nav a:hover {
 
 .intro {
   display: flex;
-  background-color: #342038;
+  background-color: #000000ab;
   color: #d8d5c5;
   justify-content: space-around;
   font-family: "Roboto Slab", serif;
   margin: 5rem 15rem;
-  border-radius: 15px;
+  border-radius: 5px;
+  box-shadow: 0 20px 20px 0 rgb(0, 0, 0);
 }
 
 .intro-head {
@@ -156,14 +157,14 @@ nav a:hover {
   height: 40rem;
   width: 35rem;
   margin: 2rem;
-  border: 2px solid blue;
-  border-radius: 10px;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 3px;
 }
 
 /* Skills */
 
 .skills {
-  background-color: #a53b31;
+  background-color:rgb(19, 17, 17);;
   font-family: "Roboto Slab", serif;
   padding: 4rem 0;
 }
@@ -182,19 +183,19 @@ nav a:hover {
 
 .skill-card {
   margin: 2rem;
-  background-color: #79762f;
+  background-color: #ff0055c0;
   color: #fae1e1;
   min-height: 350px;
   width: 400px;
-  border-radius: 15px;
-  box-shadow: 5px 4px 8px 1px #92923d;
+  border-radius: 5px;
+  box-shadow: 5px 4px 8px 1px #ffffffe7;
 }
 
 .skill-card:hover{
   position: relative;
   bottom: 7px;
   left: 5px;
-  box-shadow: 10px 8px 8px 1px #92923d;
+  box-shadow: 10px 8px 8px 1px#ebebebe7;
 }
 
 .skill-name {
@@ -216,7 +217,7 @@ li {
 
 .projects {
   font-family: "Roboto Slab", serif;
-  background-color: #3e3853 ;
+  background-color:  crimson;
 }
 
 .projects-heading {
@@ -236,20 +237,20 @@ li {
 }
 .grid-item {
   letter-spacing: 1.1px;
-  background-color: #222c31;
-  border: 2px solid rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.658);
+  border: 2px solid rgb(0, 0, 0);
   min-height: 15rem;
   margin: 1rem;
   text-align: center;
-  border-radius: 20px;
-  box-shadow: 5px 4px 8px 1px #263131;
+  border-radius: 3px;
+  box-shadow: 5px 4px 8px 1px #000000;
 }
 
 .grid-item:hover{
   position: relative;
   bottom: 7px;
   left: 5px;
-  box-shadow: 15px 10px 8px 1px #263131;
+  box-shadow: 15px 10px 8px 1px #000000;
 }
 
 .project-name {
