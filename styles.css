@@ -9,13 +9,15 @@ html{
 }
 
 body{
-  background-color: crimson;
+  /* background-color: #746f6f; */
+  background-color: #916BBF;
 }
 
 /* navbar */
 .sticky-section {
   overflow: hidden;
-  background-color: rgb(19, 17, 17);
+  /* background-color: #1a3a4d; */
+  background-color: #030303;
   width: 100%;
   color: white;
   position: sticky;
@@ -30,10 +32,13 @@ nav a {
   height: 70px;
   padding: 20px 30px;
   transition: all 0.5s ease 0s;
+  /* border-radius: 10px;
+  border: 1px solid white; */
 }
 
 nav a:hover {
-  background-color: #002e5b;
+  /* background-color: #002e5b; */
+  background-color: #6920AE;
   color: wheat;
 }
 
@@ -60,6 +65,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  border-bottom: 15px solid #3B1262;
 }
 
 .first {
@@ -125,13 +131,15 @@ nav a:hover {
 
 .intro {
   display: flex;
-  background-color: #000000ab;
+  /* background-color: #342038; */
+  background-color: #3B1262;
   color: #d8d5c5;
   justify-content: space-around;
   font-family: "Roboto Slab", serif;
   margin: 5rem 15rem;
-  border-radius: 5px;
-  box-shadow: 0 20px 20px 0 rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  
 }
 
 .intro-head {
@@ -157,14 +165,15 @@ nav a:hover {
   height: 40rem;
   width: 35rem;
   margin: 2rem;
-  border: 2px solid rgb(255, 255, 255);
-  border-radius: 3px;
+  border: 2px solid #BBE7E5;
+  border-radius: 10px;
 }
 
 /* Skills */
 
 .skills {
-  background-color:rgb(19, 17, 17);;
+  /* background-color: #a53b31; */
+  background-color: #3B1262;
   font-family: "Roboto Slab", serif;
   padding: 4rem 0;
 }
@@ -183,19 +192,22 @@ nav a:hover {
 
 .skill-card {
   margin: 2rem;
-  background-color: #ff0055c0;
+  /* background-color: #79762f; */
+  background-color: #7C5BA3;
   color: #fae1e1;
   min-height: 350px;
   width: 400px;
-  border-radius: 5px;
-  box-shadow: 5px 4px 8px 1px #ffffffe7;
+  border-radius: 15px;
+  /* box-shadow: 5px 4px 8px 1px #92923d; */
 }
 
 .skill-card:hover{
   position: relative;
   bottom: 7px;
   left: 5px;
-  box-shadow: 10px 8px 8px 1px#ebebebe7;
+  /* box-shadow: 5px 8px 8px 1px #DBCBBD; */
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  
 }
 
 .skill-name {
@@ -217,7 +229,7 @@ li {
 
 .projects {
   font-family: "Roboto Slab", serif;
-  background-color:  crimson;
+  background-color:black ;
 }
 
 .projects-heading {
@@ -235,10 +247,16 @@ li {
   column-gap: 1rem;
   padding: 4rem 3rem;
 }
+
+
+
+
+
 .grid-item {
   letter-spacing: 1.1px;
-  background-color: rgba(0, 0, 0, 0.658);
-  border: 2px solid rgb(0, 0, 0);
+  /* background-color: #222c31; */
+  background-color: #3B1262;
+  border: 2px solid rgba(0, 0, 0, 0.8);
   min-height: 15rem;
   margin: 1rem;
   text-align: center;
@@ -334,6 +352,7 @@ textarea {
   background: #cc4949;
 }
 
+
 @media only screen and (max-width: 1536px){
   .myButton{
     margin-top: 300px;
@@ -349,5 +368,9 @@ textarea {
 
   .project-1 {
     font-size: 30px;
+  }
+  
+  .intro {
+    margin: 90px ;
   }
 }
