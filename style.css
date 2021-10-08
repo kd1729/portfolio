@@ -9,31 +9,32 @@ html{
 }
 
 body{
-  /* background-color: #746f6f; */
   background-color: #916BBF;
 }
 
-/* navbar */
-.sticky-section {
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   overflow: hidden;
-  /* background-color: #1a3a4d; */
   background-color: #030303;
   width: 100%;
   color: white;
   position: sticky;
   top: 0px;
+  height: 50px;
 }
 
-nav a {
-  float: right;
+nav #logo a, #links a{
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
-  height: 70px;
-  padding: 20px 30px;
+  padding: 1rem;
   transition: all 0.5s ease 0s;
-  /* border-radius: 10px;
-  border: 1px solid white; */
+}
+
+nav #links a{
+  font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -42,36 +43,24 @@ nav a:hover {
   color: wheat;
 }
 
-.github {
-  display: flex;
-  justify-content: space-evenly;
-  float: left;
-  font-size: 1.6rem;
-  letter-spacing: 2px;
+nav #logo a{
+  font-size: 2rem;
 }
-
-.github img {
-  height: 45px;
-  width: 55px;
-  border-radius: 5px;
-  margin-left: 1rem;
-}
-
-/* Home */
 
 .main {
   background-image: url("./images/R.jpeg");
   color: antiquewhite;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
   border-bottom: 15px solid #3B1262;
 }
 
 .first {
-  margin: 0 auto;    
+  margin-top: 3rem;
   font-family: cursive;
-  margin-top: 10rem;
 }
 
 .first-a {
@@ -82,28 +71,23 @@ nav a:hover {
 .first-b {
   font-size: 3rem;
   color: azure;
+  margin: 1rem 0;
 }
 
-.first-c {
+#c{
+  display: flex;
+  flex-direction: row;
   padding-bottom: 2rem;
-  font-size: 2rem;
-  color: rgb(211, 236, 236);
   border-bottom: 4px solid blueviolet;
 }
 
-.second {
-  text-align: center;
-  margin-top: 8rem;
-  font-size: 1.5rem;
-  color: rgb(0, 255, 0);
-  font-weight: bold;
-  letter-spacing: 2px;
+.first-c {
+  font-size: 2rem;
+  color: rgb(211, 236, 236);
 }
-
 
 .myButton {
   font-family: "Roboto Slab", serif;
-  display: inline;
   text-align: center;
 	background-color:#d82d17;
 	border-radius:10px;
@@ -111,32 +95,41 @@ nav a:hover {
 	font-size:25px;
   border: 2px solid white;
 	padding:10px 20px;
+  margin-left: 10px;
   box-shadow: 4px 3px 8px 1px #9b2525;
 }
 
 .myButton a{
   color: white;
 }
+
 .myButton:hover {
-	background-color:#eb675e;
+  background-color:#eb675e;
 }
+
 .myButton:active {
-	position:relative;
+  position:relative;
 	top:1px;
 }
 
-
-
-/* Intro */
+.second {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 1.5rem;
+  color: rgb(0, 255, 0);
+  font-weight: bold;
+  letter-spacing: 2px;
+}
 
 .intro {
   display: flex;
-  /* background-color: #342038; */
+  align-items: center;
   background-color: #3B1262;
   color: #d8d5c5;
   justify-content: space-around;
   font-family: "Roboto Slab", serif;
-  margin: 5rem 15rem;
+  margin: 5rem 6rem;
+  padding: 1rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   
@@ -145,8 +138,7 @@ nav a:hover {
 .intro-head {
   font-size: 2rem;
   text-decoration: underline;
-  padding-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   color: #bbe7e5;
 }
@@ -157,48 +149,45 @@ nav a:hover {
   text-align: center;
   font-size: 1.4rem;
   font-weight: bold;
-  padding: 6rem;
-  padding-top: 3rem;
+  padding: 3rem 1rem;
 }
 
 .intro img {
-  height: 40rem;
-  width: 35rem;
-  margin: 2rem;
+  width: 50%;
   border: 2px solid #BBE7E5;
   border-radius: 10px;
 }
 
-/* Skills */
-
 .skills {
-  /* background-color: #a53b31; */
   background-color: #3B1262;
   font-family: "Roboto Slab", serif;
   padding: 4rem 0;
-}
-
-.skills-text {
-  display: flex;
 }
 
 .skills-heading {
   color: #DBCBBD;
   text-align: center;
   font-size: 3.2rem;
-  padding-top: 1rem;
+  padding: 1rem;
   text-decoration: underline;
 }
 
+.skills-text {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.5rem;
+}
+
 .skill-card {
-  margin: 2rem;
-  /* background-color: #79762f; */
+  align-self: center;
+  justify-self: center;
   background-color: #7C5BA3;
   color: #fae1e1;
-  min-height: 350px;
-  width: 400px;
+  min-height: 200px;
+  width: 230px;
   border-radius: 15px;
-  /* box-shadow: 5px 4px 8px 1px #92923d; */
 }
 
 .skill-card:hover{
@@ -207,13 +196,12 @@ nav a:hover {
   left: 5px;
   /* box-shadow: 5px 8px 8px 1px #DBCBBD; */
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  
 }
 
 .skill-name {
-  font-size: 2.5rem;
-  padding-left: 1rem;
-  padding-top: 1rem;
+  font-size: 1.7rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 ul {
@@ -221,11 +209,9 @@ ul {
 }
 
 li {
-  font-size: 2rem;
-  padding-left: 2rem;
+  font-size: 1.3rem;
+  padding-left: 1rem;
 }
-
-/* Projects */
 
 .projects {
   font-family: "Roboto Slab", serif;
@@ -242,26 +228,22 @@ li {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   row-gap: 1rem;
   column-gap: 1rem;
   padding: 4rem 3rem;
 }
 
-
-
-
-
 .grid-item {
   letter-spacing: 1.1px;
-  /* background-color: #222c31; */
   background-color: #3B1262;
   border: 2px solid rgba(0, 0, 0, 0.8);
-  min-height: 15rem;
+  min-height: 10rem;
   margin: 1rem;
   text-align: center;
   border-radius: 3px;
   box-shadow: 5px 4px 8px 1px #000000;
+  padding-bottom: 0.5rem;
 }
 
 .grid-item:hover{
@@ -285,8 +267,6 @@ li {
   margin-left: 8%;
   margin-right: 8%;
 }
-
-/* contact */
 
 .contact {
   background-color: black;
@@ -348,29 +328,188 @@ textarea {
   margin-top: -4px;
   font-weight: 700;
 }
+
 [type="submit"]:hover {
   background: #cc4949;
 }
 
+.icon{
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(6, 1fr);
+}
 
-@media only screen and (max-width: 1536px){
-  .myButton{
-    margin-top: 300px;
+.icon a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media(max-width: 1000px) {
+  .intro{
+   flex-direction: column;
   }
 
-  .second {
-    margin-top: 100px;
+  .skills-text {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
   }
+}
 
-  .skill-3 {
-    font-size: 28px;
-  }
-
-  .project-1 {
-    font-size: 30px;
+@media(max-width: 768px) {
+  nav #logo a{
+    font-size: 1.3rem;
+    padding: 1rem 0.5rem;
   }
   
+  nav #links a{
+    padding: 1rem 0.3rem;
+    font-size: 1rem;
+  }
+
+  .first {
+    margin-top: 3rem;
+  }
+  
+  .first-a {
+    font-size: 4rem;
+  }
+
+  .first-b {
+    font-size: 2rem;
+  }
+
+  #c{
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+  .first-c {
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  
+  .second {
+    margin-top: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .myButton {
+    font-size:20px;
+    display: inline;
+    width: fit-content;
+    align-self: center;
+  }
+
   .intro {
-    margin: 90px ;
+    margin: 2rem 4rem;
+    padding: 0.5rem;
+  }
+
+  .intro-head {
+    font-size: 2rem;
+  }
+  
+  .intro-text {
+    font-size: 1rem;
+    padding: 2rem 1rem;
+  }
+
+  .skills-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .projects-heading {
+    font-size: 2rem;
+  }
+
+  .project-name {
+    font-size: 1.5rem;
+  }
+
+  .project-desc {
+    font-size: 1rem;
+  }
+
+  .grid-container {
+    padding: 2rem 3rem;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0;
+  }
+
+  .icon a img{
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media(max-width: 480px) {
+  nav {
+    height: auto;
+    flex-direction: column;
+    padding: 0.5rem 0;
+  }
+  nav #logo{
+    margin-bottom: 1.5rem;
+  }
+
+  nav #logo a{
+    font-size: 1.5rem;
+  }
+
+  .first {
+    margin-top: 2rem;
+  }
+  
+  .first-a {
+    font-size: 3rem;
+  }
+
+  .first-b {
+    font-size: 1.5rem;
+  }
+
+  #c{
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  
+  
+  .first-c {
+    padding-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  
+  .second {
+    margin-top: 2.5rem;
+    font-size: 1rem;
+  }
+
+  .myButton {
+    font-size:1rempx;
+    display: inline;
+    width: fit-content;
+    align-self: center;
+  }
+
+  .intro {
+    margin: 1rem 2rem;
+    padding: 0.5rem;
+  }
+
+  .intro-head {
+    font-size: 1.5rem;
+  }
+  
+  .intro-text {
+    font-size: 1rem;
+    padding: 1rem 0.5rem;
+  }
+
+  .skills-text {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.5rem;
   }
 }

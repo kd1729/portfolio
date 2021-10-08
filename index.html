@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -7,57 +7,50 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio</title>
 </head>
 
 <body>
-
   <!-- NavBar -->
-
-  <div class="sticky-section">
-    <nav>
-      <a class="github" target="blank" href="https://github.com/onlykingKD">
+  <nav>
+    <div id="logo">
+      <a target="blank" href="https://github.com/onlykingKD">
         @onlykingKD
-        <!-- <img src="./images/github1.png" alt=""> -->
       </a>
-
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href='#about'>About Me</a>
+    </div>
+    <div id="links">
       <a href="#home">Home</a>
+      <a href='#about'>About Me</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
       <a href="#contactme">Contact Me</a>
-    </nav>
-  </div>
+    </div>
+  </nav>
 
   <!-- About -->
-
   <div class="main" id="home">
     <div class="first">
-      <h1 class="first-a">Hello,</h1><br />
-      <h3 class="first-b">I am Kaustubh Dwivedi !</h3><br />
-      <h4 class="first-c">I am a programmer.... 😀
+      <h1 class="first-a">Hello,</h1>
+      <h3 class="first-b">I am Kaustubh Dwivedi !</h3>
+      <div id="c">
+        <h4 class="first-c">I am a programmer.... 😀
+        </h4>
         <div class="myButton">
-          <a href="https://drive.google.com/file/d/1YwT4s3vg5co1AGdN-TABs_qZEhYiF-e6/view?usp=sharing" target="blank">
-            My Resume</a>
+          <a href="https://drive.google.com/file/d/1YwT4s3vg5co1AGdN-TABs_qZEhYiF-e6/view?usp=sharing" target="blank">My
+            Resume</a>
         </div>
-      </h4>
+      </div>
     </div>
 
     <div class="second">
       Start Scrolling and take a look at my Portfolio, <br>
       and let's create something big togther !
-
     </div>
-
-
-
   </div>
 
   <!-- Intro -->
-
   <div class="intro" id="about">
-
     <div class="intro-text">
       <div class="intro-head">
         About Me
@@ -84,11 +77,8 @@
         If you wanna talk about Football or F.R.I.E.N.D.S. or Space Mysteries
         then I am just the right person.
       </p>
-
     </div>
-
     <img src="./images/My_Photo.jpg" alt="">
-
   </div>
 
   <!-- Skills -->
@@ -147,7 +137,6 @@
   </div>
 
   <!-- Projects -->
-
   <div class="projects" id="projects">
     <div class="projects-heading">
       My Few Projects
@@ -194,33 +183,9 @@
           images of notes based imagesfrom a vast amount of random images
         </div>
       </div>
-
-
-
-
     </div>
-
   </div>
-  <!-- <div class="experience">
-    <div class=""></div>
-    <div class="exp-card">
-      <div class="exp-heading">
-        <h1>Applied Data Science Intern</h1>
-        <h3>IIT Kanpur</h3>
-        <h3>March 2020 - May 2020</h3>
-      </div>
 
-      <div class="exp-desc">
-        Completed 90 days of online internship from IIT‐K. Learned about
-        various text preprocessing techniques, text representation using
-        word embeddings, comparing efficiencies of various models such as
-        LSTMs, GRUs, CNNs. Completed a NLP Project of Sentiment Classification of Tweets.
-      </div>
-    </div>
-  </div> -->
-
-
-  <!-- Contact -->
   <div class="contact" id="contactme">
     <h2>Contact Me</h2>
     <form action="https://formspree.io/f/mqkwgovb" method="POST">
@@ -230,31 +195,32 @@
       <input type="submit" value="SUBMIT" />
     </form>
 
-    <p align="center">
+    <div class="icon">
       <a href='mailto:kaustubhdwivedi1729@gmail.com' target='_blank'>
-        <img src="./images/icons8-gmail-96.png"></a>
+        <img src="./images/icons8-gmail-96.png">
+      </a>
 
       <a href='https://github.com/onlykingKD/' target='_blank'>
-        <img src="./images/icons8-github-96.png"> </a>
+        <img src="./images/icons8-github-96.png">
+      </a>
 
       <a href='https://linkedin.com/in/kaustubhdwivedi1729/' target='_blank'>
-        <img src="./images/icons8-linkedin-96.png"> </a>
+        <img src="./images/icons8-linkedin-96.png">
+      </a>
 
       <a href='https://instagram.com/onlykingkd/' target='_blank'>
-        <img src="./images/icons8-instagram-logo-96.png" /></a>
+        <img src="./images/icons8-instagram-logo-96.png" />
+      </a>
 
       <a href='https://www.facebook.com/kaustubh.dwivedi.94/' target='_blank'>
-        <img src="./images/icons8-facebook-96.png"></a>
+        <img src="./images/icons8-facebook-96.png">
+      </a>
 
       <a href='https://twitter.com/onlykingKD/' target='_blank'>
-        <img src="./images/icons8-twitter-96.png"></a>
-    </p>
-
+        <img src="./images/icons8-twitter-96.png">
+      </a>
+    </div>
   </div>
-
-
-
-
 </body>
 
 </html>
