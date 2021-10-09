@@ -31,7 +31,7 @@
   <!-- About -->
   <div class="main" id="home">
     <div class="first">
-      <h1 class="first-a">Hello,</h1>
+      <h1 class="first-a fade">Hello,</h1>
       <h3 class="first-b">I am Kaustubh Dwivedi !</h3>
       <div id="c">
         <h4 class="first-c">I am a programmer.... 😀
@@ -43,9 +43,9 @@
       </div>
     </div>
 
-    <div class="second">
+    <div class="second fade">
       Start Scrolling and take a look at my Portfolio, <br>
-      and let's create something big togther !
+      and let's create something big together !
     </div>
   </div>
 
@@ -55,25 +55,25 @@
       <div class="intro-head">
         About Me
       </div>
-      <p>
+      <p class="stagger">
         I am currently a pre-final year student pursuing Bachelor of Technology
         in the field of Computer Science and Engineering from VIT Vellore.
         I live in Kanpur, UP, India.
       </p>
       <br>
-      <p>
+      <p class="stagger">
         I have done few projects in Machine Learning, Deep Learning and NLP.
         Currently I am working on FrontEnd Projects.
         In coming days I wil learn Backend and probably Linux and DevOps also.
       </p>
       <br>
-      <p>
+      <p class="stagger">
         I love doing coding and development.
         My primary language for coding is C++ and for development is Javascript.
         I aim to become a full stack developer till the end of my pre-final year.
       </p>
       <br>
-      <p>
+      <p class="stagger">
         If you wanna talk about Football or F.R.I.E.N.D.S. or Space Mysteries
         then I am just the right person.
       </p>
@@ -189,10 +189,10 @@
   <div class="contact" id="contactme">
     <h2>Contact Me</h2>
     <form action="https://formspree.io/f/mqkwgovb" method="POST">
-      <input name="name" type="text" class="feedback-input" placeholder="Name" />
-      <input name="email" type="text" class="feedback-input" placeholder="Email" />
-      <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
-      <input type="submit" value="SUBMIT" />
+      <input name="name" type="text" class="feedback-input scroll" placeholder="Name" />
+      <input name="email" type="text" class="feedback-input scroll" placeholder="Email" />
+      <textarea name="text" class="feedback-input scroll" placeholder="Comment"></textarea>
+      <input type="submit" value="SUBMIT" class="scroll" />
     </form>
 
     <div class="icon">
@@ -221,6 +221,11 @@
       </a>
     </div>
   </div>
+  <!-- gsap animation script tag -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- javascript script tag -->
+  <script src="./app.js"></script>
 </body>
 
 </html>
