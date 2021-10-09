@@ -121,6 +121,8 @@ nav #logo a{
   letter-spacing: 2px;
 }
 
+/* About me  */
+
 .intro {
   display: flex;
   align-items: center;
@@ -128,7 +130,7 @@ nav #logo a{
   color: #d8d5c5;
   justify-content: space-around;
   font-family: "Roboto Slab", serif;
-  margin: 5rem 6rem;
+  margin: 5rem 9rem;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -153,10 +155,12 @@ nav #logo a{
 }
 
 .intro img {
-  width: 50%;
+  width: 30%;
   border: 2px solid #BBE7E5;
   border-radius: 10px;
 }
+ 
+/* Skills */
 
 .skills {
   background-color: #3B1262;
@@ -170,6 +174,7 @@ nav #logo a{
   font-size: 3.2rem;
   padding: 1rem;
   text-decoration: underline;
+  margin-bottom: 1rem;
 }
 
 .skills-text {
@@ -185,8 +190,8 @@ nav #logo a{
   justify-self: center;
   background-color: #7C5BA3;
   color: #fae1e1;
-  min-height: 200px;
-  width: 230px;
+  min-height: 250px;
+  width: 270px;
   border-radius: 15px;
 }
 
@@ -199,7 +204,7 @@ nav #logo a{
 }
 
 .skill-name {
-  font-size: 1.7rem;
+  font-size: 2rem;
   padding-left: 0.5rem;
   padding-top: 0.5rem;
 }
@@ -209,9 +214,12 @@ ul {
 }
 
 li {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding-left: 1rem;
 }
+
+/* Projects  */
+
 
 .projects {
   font-family: "Roboto Slab", serif;
@@ -244,6 +252,7 @@ li {
   border-radius: 3px;
   box-shadow: 5px 4px 8px 1px #000000;
   padding-bottom: 0.5rem;
+  border-radius: 10px;
 }
 
 .grid-item:hover{
@@ -267,6 +276,9 @@ li {
   margin-left: 8%;
   margin-right: 8%;
 }
+
+/* Contact me  */
+
 
 .contact {
   background-color: black;
@@ -333,7 +345,10 @@ textarea {
   background: #cc4949;
 }
 
+ /* Social Media Icons  */
+
 .icon{
+  margin: 0 25%;
   display: grid;
   align-items: center;
   justify-content: space-between;
@@ -345,6 +360,11 @@ textarea {
   align-items: center;
   justify-content: center;
 }
+
+
+/*  Media Query */
+
+
 
 @media(max-width: 1000px) {
   .intro{
@@ -488,7 +508,7 @@ textarea {
   }
 
   .myButton {
-    font-size:1rempx;
+    font-size:1rem;
     display: inline;
     width: fit-content;
     align-self: center;
@@ -497,6 +517,10 @@ textarea {
   .intro {
     margin: 1rem 2rem;
     padding: 0.5rem;
+  }
+
+  .intro img {
+    width: 80%;
   }
 
   .intro-head {
@@ -511,5 +535,14 @@ textarea {
   .skills-text {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0.5rem;
+  }
+  
+  form {
+    max-width: 420px;
+    margin: 0 10%;
+  }
+
+  .icon{
+    margin: 0;
   }
 }
