@@ -389,9 +389,9 @@ textarea {
   background: #cc4949;
 }
 
- /* Social Media Icons  */
+ /* Social Media iconss  */
 
-.icon{
+.icons{
   margin: 0 25%;
   display: grid;
   align-items: center;
@@ -399,10 +399,17 @@ textarea {
   grid-template-columns: repeat(6, 1fr);
 }
 
-.icon a{
+.icons a{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.icons a {
+  transition: all 0.2s ease-in-out;
+}
+.icons a:hover {
+  transform: translateY(-10px);
 }
 
 
@@ -503,7 +510,7 @@ textarea {
     grid-gap: 0;
   }
 
-  .icon a img{
+  .icons a img{
     height: 50px;
     width: 50px;
   }
@@ -586,7 +593,7 @@ textarea {
     margin: 0 10%;
   }
 
-  .icon{
+  .icons{
     margin: 0;
   }
 }
