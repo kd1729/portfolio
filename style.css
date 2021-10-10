@@ -166,11 +166,19 @@ div.icon img{
  width: 1000px;
 }
 [data-project],[data-skill]{
+    transition:0.5s;
     padding: 10px;
     width: 300px;
     background-color: var(--theme-trans);
     border: 12px;
     border:1px solid var(--theme-color); 
+    margin:5px;
+    box-shadow:5px 5px 0 var(--theme-color);
+}
+[data-project]:hover,[data-skill]:hover{
+  box-shadow:none;
+  background:var(--theme-color);
+  color:var(--btn-col);
 }
 .cntme{
     display: flex;
