@@ -598,3 +598,8 @@ textarea {
     margin: 0;
   }
 }
+
+.dark{
+            background-color: #222;
+            color: #e6e6e6;
+     }
