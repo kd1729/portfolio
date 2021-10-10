@@ -240,7 +240,6 @@ nav #logo a{
   border-radius: 15px;
   box-sizing: border-box;
   padding: 1rem;
-  transition: bottom 5s ease, left 5s ease;
 }
 
 .skill-card:hover{
@@ -302,6 +301,8 @@ li {
   box-shadow: 5px 4px 8px 1px #000000;
   padding-bottom: 0.5rem;
   border-radius: 10px;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 .grid-item:hover{
