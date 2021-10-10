@@ -238,6 +238,8 @@ nav #logo a{
   min-height: 250px;
   width: 270px;
   border-radius: 15px;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 .skill-card:hover{
@@ -261,6 +263,7 @@ ul {
 li {
   font-size: 1.5rem;
   padding-left: 1rem;
+  font-size: 20px;
 }
 
 /* Projects  */
