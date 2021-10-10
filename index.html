@@ -6,130 +6,133 @@
   <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="uikit.min.css">
   <title>My Portfolio</title>
 </head>
 
-<body>
+<body class="light">
   <!-- NavBar -->
-  <nav>
+  <nav class="pos-fix">
     <div id="logo">
-      <a target="blank" href="https://github.com/onlykingKD">
-        @onlykingKD
+      <img src="images/profile.png" height="19px" style="margin: auto;margin-left: 5px;">
+      <a  target="blank" href="https://github.com/onlykingKD" style="margin-left:5px">
+         <b data-type-write class="gradient-text">onlykingKD</b>
       </a>
     </div>
-    <div id="links">
-      <a href="#home">Home</a>
-      <a href='#about'>About Me</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#contactme">Contact Me</a>
+    <div onclick="expandnavbar();" class="vert-mid" style="margin-left: auto;margin-right: 18px;"><a data-btn  >&equiv;</a></div>
+    <div data-exp="false" id="links" style="margin-left: auto;margin-right: 20px;">
+      <a href="#home"><span>Home</span></a>
+      <a href='#about'><span>About Me</span></a>
+      <a href="#skills"><span>Skills</span></a>
+      <a href="#projects"><span>Projects</span></a>
+      <a href="#contactme"><span>Contact Me</span></a>
+      <a href="javascript:togmode()"><span>Toggle mode</span></a>
     </div>
   </nav>
 
   <!-- About -->
-  <div class="main" id="home">
+  <div class="main start" id="home">
     <div class="first">
-      <h1 class="first-a fade">Hello,</h1>
-      <h3 class="first-b">I am Kaustubh Dwivedi !</h3>
+      <img class="profile" src="images/profile_lg.png" height="100px" style="border-radius: 50%;">
+      <h1 class="first-a" data-type-write>Hello,</h1>
+      <h3 class="first-b"><code data-type-write>I am Kaustubh Dwivedi !</code></h3>
       <div id="c">
-        <h4 class="first-c">I am a programmer.... 😀
+        <h4 class="first-c" data-type-write="">I am a programmer.... 😀
         </h4>
-        <div class="myButton">
-          <a href="https://drive.google.com/file/d/1YwT4s3vg5co1AGdN-TABs_qZEhYiF-e6/view?usp=sharing" target="blank">My
-            Resume</a>
-        </div>
+          <a class="btn" href="https://drive.google.com/file/d/1YwT4s3vg5co1AGdN-TABs_qZEhYiF-e6/view?usp=sharing" target="blank">My
+            Resume</a>     
       </div>
     </div>
 
-    <div class="second fade">
+    <div class="second">
       Start Scrolling and take a look at my Portfolio, <br>
-      and let's create something big together !
+      and let's create something big togther !
     </div>
   </div>
 
   <!-- Intro -->
-  <div class="intro" id="about">
+  <div  class="intro card" id="about">
     <div class="intro-text">
-      <div class="intro-head">
+      <h1 data-scroll class="intro-head">
         About Me
-      </div>
-      <p class="stagger">
+      </h1>
+      <p data-scroll data-scroll >
         I am currently a pre-final year student pursuing Bachelor of Technology
         in the field of Computer Science and Engineering from VIT Vellore.
         I live in Kanpur, UP, India.
       </p>
       <br>
-      <p class="stagger">
+      <p data-scroll>
         I have done few projects in Machine Learning, Deep Learning and NLP.
         Currently I am working on FrontEnd Projects.
         In coming days I wil learn Backend and probably Linux and DevOps also.
       </p>
       <br>
-      <p class="stagger">
+      <p data-scroll>
         I love doing coding and development.
         My primary language for coding is C++ and for development is Javascript.
         I aim to become a full stack developer till the end of my pre-final year.
       </p>
       <br>
-      <p class="stagger">
+      <p data-scroll>
         If you wanna talk about Football or F.R.I.E.N.D.S. or Space Mysteries
         then I am just the right person.
       </p>
     </div>
-    <img src="./images/My_Photo.jpg" alt="">
+    
   </div>
 
   <!-- Skills -->
 
-  <div class="skills" id="skills">
-    <div class="skills-heading">
+  <div class="skills card" id="skills">
+    <h1 data-scroll class="skills-heading">
       My Skills
-    </div>
-    <div class="skills-text">
+    </h1>
+    <div data-skills-inside>
 
-      <div class="skill-card">
-        <div class="skill-name"> Languages </div>
+      <div data-skill>
+        <div class="skill-name" data-scroll > Languages </div>
         <ul>
-          <li>C++</li>
-          <li>Python</li>
-          <li>C</li>
-          <li>Java</li>
-          <li>Javascript</li>
+          <li data-scroll>C++</li>
+          <li data-scroll>Python</li>
+          <li data-scroll>C</li>
+          <li data-scroll>Java</li>
+          <li data-scroll>Javascript</li>
         </ul>
       </div>
 
-      <div class="skill-card">
+      <div data-skill>
         <div class="skill-name"> Frontend </div>
         <ul>
-          <li>HTML/CSS</li>
-          <li>Javascript</li>
-          <li>Bootstrap</li>
-          <li>MaterialUI</li>
-          <li>ReactJS</li>
+          <li data-scroll>HTML/CSS</li>
+          <li data-scroll>Javascript</li>
+          <li data-scroll>Bootstrap</li>
+          <li data-scroll>MaterialUI</li>
+          <li data-scroll>ReactJS</li>
         </ul>
       </div>
 
-      <div class="skill-card">
+      <div data-skill>
         <div class="skill-name"> Data Science </div>
         <ul>
-          <li class="skill-3">Machine Learning</li>
-          <li class="skill-3">Natural Lang. Proc.</li>
-          <li class="skill-3">Neural Networks</li>
-          <li class="skill-3">Tensorflow</li>
-          <li class="skill-3">Jupyter Notebooks</li>
+          <li data-scroll >Machine Learning</li>
+          <li data-scroll >Natural Lang. Proc.</li>
+          <li data-scroll >Neural Networks</li>
+          <li data-scroll >Tensorflow</li>
+          <li data-scroll >Jupyter Notebooks</li>
         </ul>
       </div>
 
-      <div class="skill-card">
+      <div data-skill>
         <div class="skill-name"> Other Skills </div>
         <ul>
-          <li>Linux</li>
-          <li>GIT</li>
-          <li>AWS</li>
-          <li>MySQL</li>
-          <li>OOPS+OS+DBMS</li>
+          <li data-scroll>Linux</li>
+          <li data-scroll>GIT</li>
+          <li data-scroll>AWS</li>
+          <li data-scroll>MySQL</li>
+          <li data-scroll>OOPS+OS+DBMS</li>
         </ul>
       </div>
 
@@ -137,48 +140,48 @@
   </div>
 
   <!-- Projects -->
-  <div class="projects" id="projects">
-    <div class="projects-heading">
+  <div class="projects card" id="projects">
+    <h1 data-scroll class="projects-heading">
       My Few Projects
-    </div>
-    <div class="grid-container">
-      <div class="grid-item">
-        <div class="project-name project-1">
+    </h1>
+    <div data-projects-inside data-scroll >
+      <div data-project>
+        <h3 data-scroll>
           Face Mask Detection Using Transfer Learning
-        </div>
-        <div class="project-desc">
+        </h3>
+        <div>
           Worked on a Face Mask Detection project which uses Transfer Learn‐
           ing using Keras and MobileNetV2. This project classifies a human face
           whether he is wearing a face mask or not.
         </div>
       </div>
 
-      <div class="grid-item">
-        <div class="project-name">
+      <div data-project>
+        <h3>
           Chatbot using NLP, Tensorflow, Keras
-        </div>
-        <div class="project-desc">
+        </h3>
+        <div >
           Created a ChatBot using NLP for the technical club of which I am part
           of in my college. This chatbot answers simple queries of the users
           about the club.
         </div>
       </div>
 
-      <div class="grid-item">
-        <div class="project-name">
+      <div data-project>
+        <h3>
           Expense Tracker and To-Do App using ReactJS
-        </div>
-        <div class="project-desc">
+        </h3>
+        <div >
           Created a simple frontend for a To‐Do app and an Expense Tracker
           app using ReactJS and Redux.
         </div>
       </div>
 
-      <div class="grid-item">
-        <div class="project-name">
+      <div data-project>
+        <h3>
           Notes Segregation App
-        </div>
-        <div class="project-desc">
+        </h3>
+        <div >
           Developed a ML Model using Keras that can be used to segregate the
           images of notes based imagesfrom a vast amount of random images
         </div>
@@ -186,46 +189,40 @@
     </div>
   </div>
 
-  <div class="contact" id="contactme">
+  <div class="card cntme" id="contactme">
+    <div data-opts>
     <h2>Contact Me</h2>
     <form action="https://formspree.io/f/mqkwgovb" method="POST">
-      <input name="name" type="text" class="feedback-input scroll" placeholder="Name" />
-      <input name="email" type="text" class="feedback-input scroll" placeholder="Email" />
-      <textarea name="text" class="feedback-input scroll" placeholder="Comment"></textarea>
-      <input type="submit" value="SUBMIT" class="scroll" />
+      <input class="btn" name="name" type="text" class="feedback-input" placeholder="Name" /><br>
+      <input class="btn" name="email" type="text" class="feedback-input" placeholder="Email" /><br>
+      <textarea class="btn"name="text" class="feedback-input" placeholder="Comment"></textarea><br>
+      <input class="btn" type="submit" value="SUBMIT" /><br>
     </form>
 
-    <div class="icons">
-      <a href='mailto:kaustubhdwivedi1729@gmail.com' target='_blank' class="icon">
-        <img src="./images/icons8-gmail-96.png">
+    <div class="icon">
+      <a  href='mailto:kaustubhdwivedi1729@gmail.com' target='_blank'>
+        <img src="images/mail.png">
       </a>
-
-      <a href='https://github.com/onlykingKD/' target='_blank' class="icon">
-        <img src="./images/icons8-github-96.png">
+      <a uk-icon="github" href='https://github.com/onlykingKD/' target='_blank'>
+       <img src="images/github.png">
       </a>
-
-      <a href='https://linkedin.com/in/kaustubhdwivedi1729/' target='_blank' class="icon">
-        <img src="./images/icons8-linkedin-96.png">
+      <a uk-icon="linkedin" href='https://linkedin.com/in/kaustubhdwivedi1729/' target='_blank'>
+       <img src="images/linkedin.png">
       </a>
-
-      <a href='https://instagram.com/onlykingkd/' target='_blank' class="icon">
-        <img src="./images/icons8-instagram-logo-96.png" />
+      <a uk-icon="instagram" href='https://instagram.com/onlykingkd/' target='_blank'>
+       <img src="images/insta.png">
       </a>
-
-      <a href='https://www.facebook.com/kaustubh.dwivedi.94/' target='_blank' class="icon">
-        <img src="./images/icons8-facebook-96.png">
+      <a uk-icon="facebook" href='https://www.facebook.com/kaustubh.dwivedi.94/' target='_blank'>
+       <img src="images/facebook.png">
       </a>
-
-      <a href='https://twitter.com/onlykingKD/' target='_blank' class="icon">
-        <img src="./images/icons8-twitter-96.png">
+      <a uk-icon="twitter" href='https://twitter.com/onlykingKD/' target='_blank'>
+       <img src="images/twitter.png">
       </a>
     </div>
   </div>
-  <!-- gsap animation script tag -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <!-- javascript script tag -->
-  <script src="./app.js"></script>
+  </div>
+  <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+  <script src="anim.js"></script>
 </body>
 
 </html>
