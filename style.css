@@ -24,7 +24,7 @@ nav{
   position: sticky;
   top: 0px;
   height: 50px;
-  z-index: 1;
+  z-index: 99;
 }
 
 nav #logo a, #links a{
