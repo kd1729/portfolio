@@ -9,7 +9,7 @@ html{
 }
 
 body{
-  background-color: #916BBF;
+  background-color: #3d6694;
 }
 
 nav{
@@ -40,7 +40,7 @@ nav #links a{
 
 nav a:hover {
   /* background-color: #002e5b; */
-  background-color: #6920AE;
+  background-color: #f7f1fc;
   color: wheat;
 }
 
@@ -56,7 +56,7 @@ nav #logo a{
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  border-bottom: 15px solid #3B1262;
+  border-bottom: 15px solid #2b3f4b;
 }
 
 .first {
@@ -66,7 +66,7 @@ nav #logo a{
 
 .first-a {
   font-size: 5rem;
-  color: blueviolet;
+  color: rgb(79, 114, 155);
 }
 
 .first-b {
@@ -80,7 +80,7 @@ nav #logo a{
   display: flex;
   flex-direction: row;
   padding-bottom: 2rem;
-  border-bottom: 4px solid blueviolet;
+  border-bottom: 4px solid #2b3f4b;
 }
 
 .first-c {
@@ -134,7 +134,7 @@ nav #logo a{
 .myButton {
   font-family: "Roboto Slab", serif;
   text-align: center;
-	background-color:#d82d17;
+	background-color:#352321;
 	border-radius:10px;
 	cursor:pointer;
 	font-size:25px;
@@ -161,7 +161,7 @@ nav #logo a{
   text-align: center;
   margin-top: 5rem;
   font-size: 1.5rem;
-  color: rgb(0, 255, 0);
+  color: rgb(35, 121, 219);
   font-weight: bold;
   letter-spacing: 2px;
 }
@@ -215,7 +215,7 @@ nav #logo a{
 .intro {
   display: flex;
   align-items: center;
-  background-color: #3B1262;
+  background-color: #2b3f4b;
   color: #d8d5c5;
   justify-content: space-around;
   font-family: "Roboto Slab", serif;
@@ -252,7 +252,7 @@ nav #logo a{
 /* Skills */
 
 .skills {
-  background-color: #3B1262;
+  background-color: #2b3f4b;
   font-family: "Roboto Slab", serif;
   padding: 4rem 0;
 }
@@ -277,7 +277,7 @@ nav #logo a{
 .skill-card {
   align-self: center;
   justify-self: center;
-  background-color: #7C5BA3;
+  background-color: #2b3f4b;
   color: #fae1e1;
   min-height: 250px;
   width: 270px;
@@ -315,7 +315,7 @@ li {
 
 .projects {
   font-family: "Roboto Slab", serif;
-  background-color:black ;
+  background-color:#3d6694 ;
 }
 
 .projects-heading {
@@ -336,7 +336,7 @@ li {
 
 .grid-item {
   letter-spacing: 1.1px;
-  background-color: #3B1262;
+  background-color: #2b3f4b;
   border: 2px solid rgba(0, 0, 0, 0.8);
   min-height: 10rem;
   margin: 1rem;
@@ -375,7 +375,9 @@ li {
 
 
 .contact {
-  background-color: black;
+  /* background-color: black; */
+  background-image: url("./images/R.jpeg");
+  
 }
 
 .contact h2 {
@@ -441,28 +443,92 @@ textarea {
 
  /* Social Media iconss  */
 
-.icons{
-  margin: 0 auto;
-  width: fit-content;
-  display: grid;
-  align-items: center;
-  justify-content: space-between;
-  grid-template-columns: repeat(6, 1fr);
-}
+ /* .icons {
+  margin:0;
+  padding:0;
+  background: #dedede;
+} */
 
-.icons a{
-  display: flex;
-  align-items: center;
+.icons ul {
+  margin: 0 auto;
+  padding-bottom: 7%;
+  display:flex;
   justify-content: center;
 }
 
-.icons a {
-  transition: all 0.2s ease-in-out;
-}
-.icons a:hover {
-  transform: translateY(-10px);
+.icons ul li {
+  list-style: none;
 }
 
+.icons ul li a {
+  position: relative;
+  width:60px;
+  height:60px;
+  display:block;
+  text-align:center;
+  margin:0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
+}
+
+.icons ul li a:hover {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-decoration:none;
+}
+
+.icons ul li a .fab {
+  width: 100%;
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #262626;
+  transition: .5s;
+}
+
+
+.icons ul li a .fa {
+  width: 100%;
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #fff, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #262626;
+  transition: .5s;
+}
+
+.icons ul li:nth-child(1) a:hover .fab {
+  color: #3b5998;
+}
+
+.icons ul li:nth-child(2) a:hover .fab {
+  color: #00aced;
+}
+
+.icons ul li:nth-child(3) a:hover .fab {
+  color: #000000;
+}
+
+.icons ul li:nth-child(4) a:hover .fab {
+  color: #007bb6;
+}
+
+.icons ul li:nth-child(5) a:hover .fab {
+  color: #e4405f;
+}
+
+.icons ul li:nth-child(6) a:hover .fa {
+  color: #e4405f;
+}
 
 /*  Media Query */
 
@@ -640,12 +706,12 @@ textarea {
   }
   
   form {
-    max-width: 420px;
-    margin: 0 10%;
+    max-width: 400px;
+    margin: 2% 2% 2% 2%;
   }
 
   .icons{
     margin: 0 auto;
-    width: fit-content;
+    width: 40px;
   }
 }
