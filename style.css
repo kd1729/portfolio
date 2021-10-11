@@ -645,6 +645,7 @@ textarea {
   }
 
   .icons{
-    margin: 0;
+    margin: 0 auto;
+    width: fit-content;
   }
 }
