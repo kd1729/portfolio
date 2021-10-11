@@ -238,6 +238,8 @@ nav #logo a{
   min-height: 250px;
   width: 270px;
   border-radius: 15px;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 .skill-card:hover{
@@ -261,6 +263,7 @@ ul {
 li {
   font-size: 1.5rem;
   padding-left: 1rem;
+  font-size: 20px;
 }
 
 /* Projects  */
@@ -298,6 +301,8 @@ li {
   box-shadow: 5px 4px 8px 1px #000000;
   padding-bottom: 0.5rem;
   border-radius: 10px;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 .grid-item:hover{
@@ -393,7 +398,8 @@ textarea {
  /* Social Media iconss  */
 
 .icons{
-  margin: 0 25%;
+  margin: 0 auto;
+  width: fit-content;
   display: grid;
   align-items: center;
   justify-content: space-between;
