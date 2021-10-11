@@ -275,6 +275,9 @@ nav #logo a{
 }
 
 .skill-card {
+  position: relative;
+  bottom: 0;
+  left: 0;
   align-self: center;
   justify-self: center;
   background-color: #2b3f4b;
@@ -284,14 +287,16 @@ nav #logo a{
   border-radius: 15px;
   box-sizing: border-box;
   padding: 1rem;
+  transition: all .5s ease;
 }
 
 .skill-card:hover{
-  position: relative;
   bottom: 7px;
   left: 5px;
   /* box-shadow: 5px 8px 8px 1px #DBCBBD; */
+  text-shadow: .1rem .1rem .1rem goldenrod;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  transition: all .5s ease;
 }
 
 .skill-name {
@@ -335,6 +340,9 @@ li {
 }
 
 .grid-item {
+  position: relative;
+  bottom: 2px;
+  left: 2px;
   letter-spacing: 1.1px;
   background-color: #2b3f4b;
   border: 2px solid rgba(0, 0, 0, 0.8);
@@ -347,13 +355,15 @@ li {
   border-radius: 10px;
   box-sizing: border-box;
   padding: 1rem;
+  transition: all .3s ease;
 }
 
 .grid-item:hover{
-  position: relative;
   bottom: 7px;
   left: 5px;
-  box-shadow: 15px 10px 8px 1px #000000;
+  box-shadow: 3px 3px 3px #fffdfd96;
+  text-shadow: .1rem .1rem .1rem goldenrod;
+  transition: all .3s ease;
 }
 
 .project-name {
