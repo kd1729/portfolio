@@ -9,6 +9,8 @@
   <!--White background on icon so it stays visible during dark mode browsers-->
   <link rel="shortcut icon" href="images/BitmojieIcon(1).jpeg" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Josefin+Sans&family=Lato:ital,wght@1,300&family=Playfair+Display:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
   <script src="https://kit.fontawesome.com/8a2ffb66a4.js" crossorigin="anonymous"></script>
@@ -35,21 +37,21 @@
   <!-- About -->
   <div class="main" id="home">
     <div class="first">
-      <h1 class="first-a fade">Hello,</h1>
-      <h3 class="first-b">I am Kaustubh Dwivedi !</h3>
+      <!--Consider removing this, its not really needed-->
+      <!-- 
+        <h1 class="first-a fade">Hello,</h1> 
+      -->
+      <!--No need to write "I am ....". Your full name is cleaner-->
+      <h3 class="first-b">Kaustubh Dwivedi</h3>
       <div id="c">
-        <h4 class="first-c">I am a programmer.... 😀
+        <!--Use a more professional term. Before: Programmer => Software Engineer-->
+        <h4 class="first-c">Software Engineer 
         </h4>
         <div class="myButton">
           <a href="https://drive.google.com/file/d/1YwT4s3vg5co1AGdN-TABs_qZEhYiF-e6/view?usp=sharing" target="blank">My
             Resume</a>
         </div>
       </div>
-    </div>
-
-    <div class="second fade">
-      Start Scrolling and take a look at my Portfolio, <br>
-      and let's create something big together !
     </div>
   </div>
 
@@ -85,7 +87,7 @@
         then I am just the right person.
       </p>
     </div>
-    <img src="./images/My_Photo.jpg" alt="">
+    <img src="./images/My_Photo.jpg" alt="Kaustubh Dwived">
   </div>
 
   <!-- Skills -->
@@ -199,9 +201,8 @@
       <input name="name" type="text" class="feedback-input scroll" placeholder="Name" />
       <input name="email" type="text" class="feedback-input scroll" placeholder="Email" />
       <textarea name="text" class="feedback-input scroll" placeholder="Comment"></textarea>
-      <input type="submit" value="SUBMIT" class="scroll" onclick="return handlesubmit()" />
+      <input type="submit" value="SUBMIT" class="scroll" onclick="handlesubmit()" />
     </form>
-
 <!-- social icons -->
 
 <div class="icons">
