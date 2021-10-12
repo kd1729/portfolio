@@ -38,7 +38,7 @@ tl5.from(".scroll", {opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5});
 
 const handlesubmit = () => {
     if (confirm("Message Send Successfully")) {
-      console.log("Working");
       window.location.href = "https://onlykingkd.github.io/portfolio/";
+      return false;
   }
   }
