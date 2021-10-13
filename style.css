@@ -15,6 +15,7 @@ html{
 
 body{
   background-color: #3d6694;
+  overflow-x: hidden;
 }
 /*
   --------------------------------------------------->
@@ -271,6 +272,58 @@ nav #logo a{
   border-radius: 10px;
 }
  
+/*
+  --------------------------------------------------->
+  Strengths
+  --------------------------------------------------->
+*/
+.strengths {
+  font-family: "Roboto Slab", serif;
+  padding: 4rem 0;
+}
+
+.strengths-heading {
+  color: #DBCBBD;
+  text-align: center;
+  font-size: 3.2rem;
+  padding: 1rem;
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+.strengths-text {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0.2rem;
+}
+
+.strength-card {
+  align-self: center;
+  justify-self: center;
+  background-color: #2b3f4b;
+  color: #fae1e1;
+  min-height: 250px;
+  width: 270px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  padding: 1.3rem;
+}
+
+.strength-card:hover{
+  position: relative;
+  bottom: 7px;
+  left: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.strength-name {
+  font-size: 2rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+}
+
 /*
   --------------------------------------------------->
   SKills
@@ -586,6 +639,11 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
   }
+	
+  .strengths-text {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
 }
 
 @media(max-width: 768px) {
@@ -646,7 +704,12 @@ textarea {
     font-size: 1rem;
     padding: 2rem 1rem;
   }
-
+	
+  .strengths-heading {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+	
   .skills-heading {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -742,7 +805,12 @@ textarea {
     font-size: 1rem;
     padding: 1rem 0.5rem;
   }
-
+	
+  .strengths-text {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.5rem;
+  }
+	
   .skills-text {
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0.5rem;
