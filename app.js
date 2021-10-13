@@ -30,11 +30,19 @@ let tl5 = gsap.timeline({
     }
 });
 
+// animation for strengths section
+let tl6 = gsap.timeline({
+    scrollTrigger: {
+        trigger: ".strengths"
+    }
+});
+
 tl.from(".fade", {opacity: 0, delay: .7, stagger: .3});
 tl2.from(".stagger", {opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5});
 tl3.from(".skill-card", {opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5});
 tl4.from(".grid-item", {opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5});
 tl5.from(".scroll", {opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5});
+tl6.from(".strength-card", {opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5});
 
 const handlesubmit = () => {
     if (confirm("Message Send Successfully")) {
