@@ -43,7 +43,9 @@ nav #logo a, #links a{
   transition: all 0.5s ease 0s;
   font-family: "Roboto Slab", serif;
 }
-
+nav #logo a:hover{
+  color: #000000;
+}
 nav #links a{
   font-size: 1.2rem;
 }
@@ -72,7 +74,7 @@ nav #logo a{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 80vh;
   border-bottom: 15px solid #2b3f4b;
 }
 
@@ -196,7 +198,7 @@ nav #logo a{
   height: 40px;
   margin-left: -20px;
   top: 95%;
-  margin-top: -35px;
+  margin-top: -150px;
   box-shadow: inset 0 0 0 1px #fff;
   border-radius: 25px;
 }
@@ -384,11 +386,15 @@ li {
   box-shadow: 15px 10px 8px 1px #000000;
 }
 
-.project-name {
+.project-link {
   color: #c06448;
   font-size: 1.8rem;
   font-weight: 600;
   margin: 2rem auto;
+  text-decoration: none;
+}
+.project-name {
+  margin-bottom: 4vh;
 }
 
 .project-desc {
@@ -548,7 +554,7 @@ textarea {
 }
 
 .icons ul li:nth-child(3) a:hover .fab {
-  color: #000000;
+  color:#561ebe;
 }
 
 .icons ul li:nth-child(4) a:hover .fab {
