@@ -44,18 +44,18 @@ nav #logo a, #links a{
   transition: all 0.5s ease 0s;
   font-family: "Roboto Slab", serif;
 }
-nav #logo a:hover{
+nav #logo a:hover, nav #logo a:focus{
   color: #000000;
 }
 nav #links a{
   font-size: 1.2rem;
 }
 
-nav #links a:hover{
+nav #links a:hover,nav #links a:focus{
   color: #000000;
 }
 
-nav a:hover{
+nav a:hover, nav a:focus{
   /* background-color: #002e5b; */
   background-color: #f7f1fc;
 }
@@ -185,7 +185,9 @@ nav #logo a{
   font-weight: bold;
   letter-spacing: 2px;
 }
-
+.fade{
+  font-family: 'Josefin Sans', sans-serif;
+}
 /* Scroll icon */
 
 .icon-scroll,
