@@ -1,3 +1,8 @@
+/*
+  --------------------------------------------------->
+  Base 
+  --------------------------------------------------->
+*/
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +16,11 @@ html{
 body{
   background-color: #3d6694;
 }
-
+/*
+  --------------------------------------------------->
+  Heading
+  --------------------------------------------------->
+*/
 nav{
   display: flex;
   flex-direction: row;
@@ -32,22 +41,32 @@ nav #logo a, #links a{
   color: white;
   padding: 1rem;
   transition: all 0.5s ease 0s;
+  font-family: "Roboto Slab", serif;
 }
-
+nav #logo a:hover{
+  color: #000000;
+}
 nav #links a{
   font-size: 1.2rem;
 }
 
-nav a:hover {
+nav #links a:hover{
+  color: #000000;
+}
+
+nav a:hover{
   /* background-color: #002e5b; */
   background-color: #f7f1fc;
-  color: wheat;
 }
 
 nav #logo a{
   font-size: 2rem;
 }
-
+/*
+  --------------------------------------------------->
+  Introduction
+  --------------------------------------------------->
+*/
 .main {
   background-image: url("./images/R.jpeg");
   color: antiquewhite;
@@ -61,7 +80,7 @@ nav #logo a{
 
 .first {
   margin-top: 2rem;
-  font-family: cursive;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .first-a {
@@ -132,7 +151,7 @@ nav #logo a{
 }
 
 .myButton {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Josefin Sans', sans-serif;
   text-align: center;
 	background-color:#352321;
 	border-radius:10px;
@@ -141,7 +160,7 @@ nav #logo a{
   border: 2px solid white;
 	padding:10px 20px;
   margin-left: 10px;
-  box-shadow: 4px 3px 8px 1px #9b2525;
+  box-shadow: 4px 3px 8px 1px #074f70;
 }
 
 .myButton a{
@@ -149,7 +168,7 @@ nav #logo a{
 }
 
 .myButton:hover {
-  background-color:#eb675e;
+  background-color:#0c3346;
 }
 
 .myButton:active {
@@ -179,7 +198,7 @@ nav #logo a{
   height: 40px;
   margin-left: -20px;
   top: 95%;
-  margin-top: -35px;
+  margin-top: -150px;
   box-shadow: inset 0 0 0 1px #fff;
   border-radius: 25px;
 }
@@ -209,8 +228,11 @@ nav #logo a{
   }
 
 }
-
-/* About me  */
+/*
+  --------------------------------------------------->
+  About me
+  --------------------------------------------------->
+*/
 
 .intro {
   display: flex;
@@ -249,7 +271,11 @@ nav #logo a{
   border-radius: 10px;
 }
  
-/* Skills */
+/*
+  --------------------------------------------------->
+  SKills
+  --------------------------------------------------->
+*/
 
 .skills {
   background-color: #2b3f4b;
@@ -275,9 +301,6 @@ nav #logo a{
 }
 
 .skill-card {
-  position: relative;
-  bottom: 0;
-  left: 0;
   align-self: center;
   justify-self: center;
   background-color: #2b3f4b;
@@ -287,16 +310,14 @@ nav #logo a{
   border-radius: 15px;
   box-sizing: border-box;
   padding: 1rem;
-  transition: all .5s ease;
 }
 
 .skill-card:hover{
+  position: relative;
   bottom: 7px;
   left: 5px;
   /* box-shadow: 5px 8px 8px 1px #DBCBBD; */
-  text-shadow: .1rem .1rem .1rem goldenrod;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-  transition: all .5s ease;
 }
 
 .skill-name {
@@ -315,7 +336,11 @@ li {
   font-size: 20px;
 }
 
-/* Projects  */
+/*
+  --------------------------------------------------->
+  Projects
+  --------------------------------------------------->
+*/
 
 
 .projects {
@@ -340,9 +365,6 @@ li {
 }
 
 .grid-item {
-  position: relative;
-  bottom: 2px;
-  left: 2px;
   letter-spacing: 1.1px;
   background-color: #2b3f4b;
   border: 2px solid rgba(0, 0, 0, 0.8);
@@ -355,22 +377,24 @@ li {
   border-radius: 10px;
   box-sizing: border-box;
   padding: 1rem;
-  transition: all .3s ease;
 }
 
 .grid-item:hover{
+  position: relative;
   bottom: 7px;
   left: 5px;
-  box-shadow: 3px 3px 3px #fffdfd96;
-  text-shadow: .1rem .1rem .1rem goldenrod;
-  transition: all .3s ease;
+  box-shadow: 15px 10px 8px 1px #000000;
 }
 
-.project-name {
+.project-link {
   color: #c06448;
   font-size: 1.8rem;
   font-weight: 600;
   margin: 2rem auto;
+  text-decoration: none;
+}
+.project-name {
+  margin-bottom: 4vh;
 }
 
 .project-desc {
@@ -381,7 +405,11 @@ li {
   margin-right: 8%;
 }
 
-/* Contact me  */
+/*
+  --------------------------------------------------->
+  Contact me [Footer]
+  --------------------------------------------------->
+*/
 
 
 .contact {
@@ -391,6 +419,7 @@ li {
 }
 
 .contact h2 {
+  font-family: 'Josefin Sans', sans-serif;
   padding-top: 2rem;
   color: rgb(211, 143, 202);
   text-align: center;
@@ -525,7 +554,7 @@ textarea {
 }
 
 .icons ul li:nth-child(3) a:hover .fab {
-  color: #000000;
+  color:#561ebe;
 }
 
 .icons ul li:nth-child(4) a:hover .fab {
@@ -540,8 +569,12 @@ textarea {
   color: #e4405f;
 }
 
-/*  Media Query */
 
+/*
+  --------------------------------------------------->
+  Responsive
+  --------------------------------------------------->
+*/
 
 
 @media(max-width: 1000px) {
