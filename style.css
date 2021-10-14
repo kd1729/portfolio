@@ -545,7 +545,7 @@ textarea {
 } */
 
 .icons ul {
-  margin: 0 auto;
+  margin: 1rem auto;
   padding-bottom: 7%;
   display:flex;
   justify-content: center;
@@ -623,6 +623,120 @@ textarea {
 
 .icons ul li:nth-child(6) a:hover .fa {
   color: #e4405f;
+}
+
+
+
+
+/* Tooltips */
+.tooltip {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  opacity: 0;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translate(-50%, -100%);
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.tooltip:after {
+  display: block;
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  content: "";
+  border: solid;
+  border-width: 10px 10px 0 10px;
+  border-color: transparent;
+  transform: translate(-50%, 100%);
+}
+
+/* color */
+.social-icon--envelope{
+  background: #e4405f;
+  color: #fff;
+}
+.social-icon--linkedin{
+  background: #000;
+  color: #fff;
+}
+.social-icon--github{
+  background: #561ebe;
+  color: #fff;
+}
+.social-icon--twitter{
+  background: #2b97f1;
+  color: #fff;
+}
+.social-icon--instagram{
+  background: #e4405f;
+  color: white;
+}
+.social-icon--facebook{
+  background: #3b5a9b;
+  color: white;
+}
+/* Hover Effect*/
+.social-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -150%);
+}
+.social-icon--envelope .tooltip{
+  background: #e4405f;
+}
+.social-icon--envelope .tooltip::after{
+  border-top-color: #e4405f;
+}
+
+.social-icon--facebook .tooltip{
+  background: #3b5a9b;
+}
+.social-icon--facebook .tooltip::after{
+  border-top-color: #3b5a9a;
+}
+.social-icon--linkedin .tooltip{
+  background: #3b5a9b;
+}
+.social-icon--linkedin .tooltip::after{
+  border-top-color: #3b5a9a;
+}
+.social-icon--twitter .tooltip{
+  background: #2b97f1;
+}
+.social-icon--twitter .tooltip::after{
+  border-top-color: #2b97f1;
+}
+
+.social-icon--youtube .tooltip{
+  background: #f31344;
+}
+.social-icon--youtube .tooltip::after{
+  border-top-color: #f31344;
+}
+
+.social-icon--instagram .tooltip{
+  background: #e4405f;
+}
+.social-icon--instagram .tooltip:after{
+  border-top-color: #e4405f;
+}
+
+
+.social-icon--github .tooltip{
+  background: #561ebe;
+}
+/* icon after effect */
+.social-icon--github .tooltip::after{
+  border-top-color: #561ebe;
 }
 
 
@@ -829,3 +943,6 @@ textarea {
     width: 40px;
   }
 }
+
+
+
