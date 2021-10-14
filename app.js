@@ -50,3 +50,22 @@ const handlesubmit = () => {
       return false;
   }
   }
+//animation for navbar
+window.onscroll = function() {scrollFunction()};     
+function scrollFunction() {
+        let nodes = document.getElementById('logo').getElementsByTagName('a');
+        let linknodes = document.getElementById('links').getElementsByTagName('a');   
+  if (document.body.scrollTop > 90   || document.documentElement.scrollTop > 90 ) {
+        document.getElementById("navbar").style.padding = "0px 0px";
+        nodes[0].style.fontSize = "2rem";
+        for(var i=0; i<nodes.length; i++) {
+            linknodes[i].style.fontSize = "1.2rem";
+        }
+  } else {
+        document.getElementById("navbar").style.padding = "30px 30px";
+        nodes[0].style.fontSize = "2.5rem";
+        for(var i=0; i<nodes.length; i++) {
+            linknodes[i].style.fontSize = "1.5rem";
+        }
+  }
+}
