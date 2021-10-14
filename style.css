@@ -31,6 +31,7 @@ nav{
   background-color: #030303;
   width: 100%;
   color: white;
+  transition: all 0.5s ease 0s;
   position: sticky;
   top: 0px;
   height: 50px;
