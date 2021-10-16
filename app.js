@@ -1,5 +1,5 @@
 // animation for hero section
-let tl = gsap.timeline({defaults: {duration: 2}});
+let tl = gsap.timeline({ defaults: { duration: 2 } });
 
 // animation for about me
 let tl2 = gsap.timeline({
@@ -37,37 +37,37 @@ let tl6 = gsap.timeline({
     }
 });
 
-tl.from(".fade", {opacity: 0, delay: .7, stagger: .3});
-tl2.from(".stagger", {opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5});
-tl3.from(".skill-card", {opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5});
-tl4.from(".grid-item", {opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5});
-tl5.from(".scroll", {opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5});
-tl6.from(".strength-card", {opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5});
+tl.from(".fade", { opacity: 0, delay: .7, stagger: .3 });
+tl2.from(".stagger", { opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5 });
+tl3.from(".skill-card", { opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5 });
+tl4.from(".grid-item", { opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5 });
+tl5.from(".scroll", { opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5 });
+tl6.from(".strength-card", { opacity: 0, stagger: .3, duration: 2, y: 40, delay: .5 });
 
 const handlesubmit = () => {
     if (confirm("Message Send Successfully")) {
-      window.location.href = "https://onlykingkd.github.io/portfolio/";
-      return false;
-  }
-  }
+        window.location.href = "https://onlykingkd.github.io/portfolio/";
+        return false;
+    }
+}
 //animation for navbar
-window.onscroll = function() {scrollFunction()};     
+window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
-        let nodes = document.getElementById('logo').getElementsByTagName('a');
-        let linknodes = document.getElementById('links').getElementsByTagName('a');   
-  if (document.body.scrollTop > 90   || document.documentElement.scrollTop > 90 ) {
+    let nodes = document.getElementById('logo').getElementsByTagName('a');
+    let linknodes = document.getElementById('links').getElementsByTagName('a');
+    if (document.body.scrollTop > 90 || document.documentElement.scrollTop > 90) {
         document.getElementById("navbar").style.padding = "0px 0px";
         nodes[0].style.fontSize = "2rem";
-        for(var i=0; i<nodes.length; i++) {
+        for (var i = 0; i < nodes.length; i++) {
             linknodes[i].style.fontSize = "1.2rem";
         }
-  } else {
+    } else {
         document.getElementById("navbar").style.padding = "30px 30px";
         nodes[0].style.fontSize = "2.5rem";
-        for(var i=0; i<nodes.length; i++) {
+        for (var i = 0; i < nodes.length; i++) {
             linknodes[i].style.fontSize = "1.5rem";
         }
-  }
+    }
 }
 
 //Get the button:

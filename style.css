@@ -292,7 +292,6 @@ nav #logo a {
   padding: 1.3rem;
 }
 
-
 .strengths-heading {
   color: #dbcbbd;
   text-align: center;
@@ -317,7 +316,6 @@ nav #logo a {
   grid-gap: 0.2rem;
 }
 
-
 .strength-card:hover {
   position: relative;
   bottom: 7px;
@@ -325,8 +323,6 @@ nav #logo a {
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-
-
 
 /*
   --------------------------------------------------->
@@ -348,7 +344,6 @@ nav #logo a {
   text-decoration: underline;
   margin-bottom: 1rem;
 }
-
 
 .skill-name {
   font-size: 2rem;
@@ -532,8 +527,6 @@ textarea {
 }
 
 /* Social Media icons  */
-
-
 
 .icons ul {
   margin: 1rem auto;
@@ -947,5 +940,31 @@ textarea {
     margin: 0 6px;
     padding: 5px;
   }
+}
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  border-radius: 50%;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 25px;
+}
+
+#myBtn:hover {
+  background-color: #f2f2f2;
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
 }
