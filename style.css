@@ -857,6 +857,10 @@ textarea {
 }
 
 @media(max-width: 480px) {
+  body{
+    max-width: 480px;
+  }
+
   nav {
     height: auto;
     flex-direction: column;
@@ -868,6 +872,11 @@ textarea {
 
   nav #logo a{
     font-size: 1.5rem;
+  }
+
+  #links{
+    margin-right: 0px;
+    font-size: 0.5rem;
   }
 
   .first {
@@ -924,12 +933,12 @@ textarea {
   }
 	
   .strengths-text {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 2fr);
     grid-gap: 0.5rem;
   }
-	
+
   .skills-text {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 2fr);
     grid-gap: 0.5rem;
   }
   
@@ -938,14 +947,24 @@ textarea {
     margin: 2% 2% 2% 2%;
   }
 
-  .icons{
-    margin: 0 auto;
-    width: 40px;
-  }
 
-
-
+.icons ul {
+  margin: 0.25rem auto;
+  padding-bottom: 10%;
+  display:flex;
+  justify-content: center;
 }
+
+.icons ul li a {
+  position: relative;
+  width:48px;
+  height:48px;
+  display:block;
+  text-align:center;
+  margin:0 6px;
+  padding: 5px;
+}
+
 /* to the top button*/
 #myBtn {
     display: none;
@@ -973,8 +992,4 @@ textarea {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
 }
-
-
-
-
-
+}
