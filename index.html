@@ -33,6 +33,27 @@
         </div>
     </nav>
 
+    <!-- CSS Code -->
+    <style>
+        h3.first-b {
+          /* margin:0px; */
+          animation:type 3s steps(23); 
+          overflow: hidden;
+          white-space: nowrap;
+          font-family:consolas;
+          border-right: 4px solid black;
+          width: 23ch;
+          }
+          @keyframes type {
+          0% { 
+              width:0ch;
+           }
+          100% {
+              width: 23ch;
+          } 
+          }
+    </style>
+
     <!-- About -->
     <div class="main" id="home">
         <div class="first">
@@ -271,7 +292,34 @@
                 <li><a class="social-icon social-icon--envelope" href="mailto:kaustubhdwivedi1729@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i><div class="tooltip">mail</div></a></li>
             </ul>
         </div>
+       
+        <div class="counter">
+            <div class="head">Total Website Visit</div>
+            <div class="count">00</div>
+        </div>
 
+        <style>
+            .head , .count 
+            {
+            text-align: center;
+            width: 10%;
+             height: 10%;
+             margin-left: auto;
+             margin-right: auto;
+             border: 3px solid black;
+            background-color: rgb(211, 143, 202);
+            }
+        </style>
+
+        <script>
+            function updateCounter() {
+             fetch('https://api.countapi.xyz/update/uimonk/youtubechannel/?amount=1')
+            .then(res => res.json())
+            .then(data => counterElement.innerHTML = data.value)
+            }
+            updateCounter()
+            counterElement = document.getElementsByClassName('count')[0];
+        </script>
         <!-- gsap animation script tag -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
