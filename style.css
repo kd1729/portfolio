@@ -21,60 +21,14 @@ body {
   --------------------------------------------------->
   Heading
   --------------------------------------------------->
-*/
-nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  overflow: hidden;
-  background-color: #030303;
-  width: 100%;
-  color: white;
-  transition: all 0.5s ease 0s;
-  position: sticky;
-  top: 0px;
-  height: 50px;
-  z-index: 99;
-}
 
-nav #logo a,
-#links a {
-  text-decoration: none;
-  color: white;
-  padding: 1rem;
-  transition: all 0.5s ease 0s;
-  font-family: "Roboto Slab", serif;
-}
-nav #logo a:hover,
-nav #logo a:focus {
-  color: #000000;
-}
-nav #links a {
-  font-size: 1.2rem;
-}
-
-nav #links a:hover,
-nav #links a:focus {
-  color: #000000;
-}
-
-nav a:hover,
-nav a:focus {
-  /* background-color: #002e5b; */
-  background-color: #f7f1fc;
-}
-
-nav #logo a {
-  font-size: 2rem;
-}
 /*
   --------------------------------------------------->
   Introduction
   --------------------------------------------------->
 */
 .main {
-  background-image: url("./images/R.jpeg");
+  background-image: url('./images/R.jpeg');
   color: antiquewhite;
   display: flex;
   flex-direction: column;
@@ -85,8 +39,8 @@ nav #logo a {
 }
 
 .first {
-  margin-top: 2rem;
-  font-family: "Josefin Sans", sans-serif;
+  margin-top: 7rem;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .first-a {
@@ -147,7 +101,7 @@ nav #logo a {
 }
 
 .myButton {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   text-align: center;
   background-color: #f81c03;
   border-radius: 10px;
@@ -181,7 +135,7 @@ nav #logo a {
   letter-spacing: 2px;
 }
 .fade {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 /* Scroll icon */
 
@@ -195,14 +149,14 @@ nav #logo a {
   width: 25px;
   height: 40px;
   margin-left: -20px;
-  top: 95%;
+  top: 92%;
   margin-top: -150px;
   box-shadow: inset 0 0 0 1px #fff;
   border-radius: 25px;
 }
 
 .icon-scroll:before {
-  content: "";
+  content: '';
   width: 8px;
   height: 8px;
   background: #fff;
@@ -236,7 +190,7 @@ nav #logo a {
   background-color: #2b3f4b;
   color: #d8d5c5;
   justify-content: space-around;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   margin: 5rem 9rem;
   padding: 1rem;
   border-radius: 10px;
@@ -274,7 +228,7 @@ nav #logo a {
   --------------------------------------------------->
 */
 .strengths {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   padding: 4rem 0;
   background-color: #2b3f4b;
 }
@@ -332,7 +286,7 @@ nav #logo a {
 
 .skills {
   background-color: #3d6694;
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   padding: 4rem 0;
 }
 
@@ -393,7 +347,7 @@ li {
 */
 
 .projects {
-  font-family: "Roboto Slab", serif;
+  font-family: 'Roboto Slab', serif;
   background-color: #2b3f4b;
 }
 
@@ -461,11 +415,11 @@ li {
 */
 
 .contact {
-  background-image: url("./images/R.jpeg");
+  background-image: url('./images/R.jpeg');
 }
 
 .contact h2 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   padding-top: 2rem;
   color: rgb(211, 143, 202);
   text-align: center;
@@ -505,8 +459,8 @@ textarea {
   resize: vertical;
 }
 
-[type="submit"] {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+[type='submit'] {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
   width: 100%;
   background: #cc6666;
   border-radius: 5px;
@@ -522,7 +476,7 @@ textarea {
   font-weight: 700;
 }
 
-[type="submit"]:hover {
+[type='submit']:hover {
   background: #cc4949;
 }
 
@@ -633,7 +587,7 @@ textarea {
   left: 50%;
   width: 0;
   height: 0;
-  content: "";
+  content: '';
   border: solid;
   border-width: 10px 10px 0 10px;
   border-color: transparent;
@@ -967,4 +921,150 @@ textarea {
   padding: 3px;
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
+}
+
+/* navbar */
+
+:root {
+  --bg-color: #060606;
+}
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  padding: 0;
+}
+header {
+  font-family: 'Roboto Slab', serif;
+  position: absolute;
+  top: 0;
+  background: var(--bg-color);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+header h2 a {
+  text-decoration: none;
+  color: white;
+}
+.logo {
+  text-align: center;
+  padding: 1rem;
+}
+nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  transform: scale(1, 0);
+  transform-origin: top;
+  transition: transform 500ms ease-in-out;
+}
+nav ul > li {
+  background: var(--bg-color);
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+nav a {
+  opacity: 0;
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+nav ul li a:hover {
+  color: black;
+  background-color: white;
+}
+#btn-toggle {
+  display: none;
+}
+.btn-toggle {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 250ms linear;
+}
+.btn-toggle span,
+.btn-toggle span::after,
+.btn-toggle span::before {
+  display: block;
+  width: 2rem;
+  height: 2px;
+  background: white;
+  position: relative;
+}
+.btn-toggle span::after {
+  height: 1.5px;
+  content: '';
+  top: 7px;
+}
+.btn-toggle span::before {
+  content: '';
+  bottom: 8px;
+}
+#btn-toggle:checked ~ .btn-toggle {
+  transform: rotate(90deg);
+}
+#btn-toggle:checked ~ nav {
+  transform: scale(1, 1);
+  transition: transform 500ms ease-in-out;
+}
+#btn-toggle:checked ~ nav a {
+  opacity: 1;
+}
+
+@media screen and (min-width: 1000px) {
+  .btn-toggle {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    grid-column: 2/3;
+  }
+  nav {
+    all: unset;
+    grid-column: 3/4;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav a {
+    opacity: 1;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin-top: -12px;
+  }
+  nav li {
+    margin-right: 1rem;
+    position: relative;
+  }
+  nav a::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: black;
+    bottom: -15px;
+    left: 0.5rem;
+    transform: scale(0, 1);
+  }
+  nav a:hover::after {
+    transform: scale(1, 1);
+  }
 }

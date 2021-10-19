@@ -2,22 +2,24 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!--White background on icon so it stays visible during dark mode browsers-->
-  <link rel="shortcut icon" href="images/BitmojieIcon(1).jpeg" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-  <script src="https://kit.fontawesome.com/8a2ffb66a4.js" crossorigin="anonymous"></script>
-  <title>My Portfolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--White background on icon so it stays visible during dark mode browsers-->
+    <link rel="shortcut icon" href="images/BitmojieIcon(1).jpeg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/8a2ffb66a4.js" crossorigin="anonymous"></script>
+    <title>My Portfolio</title>
 </head>
 
 <body>
     <!-- NavBar -->
-    <nav id='navbar'>
+    <!-- <nav id='navbar'>
         <div id="logo">
             <a target="blank" href="https://github.com/onlykingKD">
                 @onlykingKD
@@ -31,27 +33,51 @@
             <a href="#projects">Projects</a>
             <a href="#contactme">Contact Me</a>
         </div>
-    </nav>
+    </nav> -->
+    <header>
+        <h2 class='logo'>
+            <a target="blank" href="https://github.com/onlykingKD">
+                @onlykingKD
+            </a>
+        </h2>
+        <input type="checkbox" id="btn-toggle">
+        <label for="btn-toggle" class='btn-toggle'>
+            <span></span>
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href='#home'>Home</a></li>
+                <li><a href='#about'>About Me</a></li>
+                <li><a href='#strengths'>Strengths</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contactme">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
 
     <!-- CSS Code -->
     <style>
         h3.first-b {
-          /* margin:0px; */
-          animation:type 3s steps(23); 
-          overflow: hidden;
-          white-space: nowrap;
-          font-family:consolas;
-          border-right: 4px solid black;
-          width: 23ch;
-          }
-          @keyframes type {
-          0% { 
-              width:0ch;
-           }
-          100% {
-              width: 23ch;
-          } 
-          }
+            /* margin:0px; */
+            animation: type 3s steps(23);
+            overflow: hidden;
+            white-space: nowrap;
+            font-family: consolas;
+            border-right: 4px solid black;
+            width: 23ch;
+        }
+
+        @keyframes type {
+            0% {
+                width: 0ch;
+            }
+
+            100% {
+                width: 23ch;
+            }
+        }
     </style>
 
     <!-- About -->
@@ -64,7 +90,8 @@
                     I am an enthusiastic programmer... 👩‍💻
                 </h4>
                 <div class="myButton">
-                    <a href="https://drive.google.com/file/d/1YwT4s3vg5co1AGdN-TABs_qZEhYiF-e6/view?usp=sharing" target="blank">
+                    <a href="https://drive.google.com/file/d/1YwT4s3vg5co1AGdN-TABs_qZEhYiF-e6/view?usp=sharing"
+                        target="blank">
                         My
                         Resume
                     </a>
@@ -230,7 +257,8 @@
         <div class="grid-container">
             <div class="grid-item">
                 <div class="project-name">
-                    <a class="project-link" href="https://github.com/onlykingKD/Face-Mask-Detector" target="_blank">Face Mask Detection Using Transfer Learning</a>
+                    <a class="project-link" href="https://github.com/onlykingKD/Face-Mask-Detector" target="_blank">Face
+                        Mask Detection Using Transfer Learning</a>
                 </div>
                 <div class="project-desc">
                     Worked on a Face Mask Detection project which uses Transfer Learning
@@ -241,7 +269,8 @@
 
             <div class="grid-item">
                 <div class="project-name">
-                    <a class="project-link" href="https://github.com/onlykingKD/STC-ChatBot" target="_blank">Chatbot using NLP, Tensorflow, Keras</a>
+                    <a class="project-link" href="https://github.com/onlykingKD/STC-ChatBot" target="_blank">Chatbot
+                        using NLP, Tensorflow, Keras</a>
                 </div>
                 <div class="project-desc">
                     Created a ChatBot using NLP for the technical club of which I am part
@@ -252,7 +281,8 @@
 
             <div class="grid-item">
                 <div class="project-name">
-                    <a class="project-link" href="https://github.com/onlykingKD/ToDo-App-ReactJS" target="_blank">Expense Tracker and To-Do App using ReactJS</a>
+                    <a class="project-link" href="https://github.com/onlykingKD/ToDo-App-ReactJS"
+                        target="_blank">Expense Tracker and To-Do App using ReactJS</a>
                 </div>
                 <div class="project-desc">
                     Created a simple frontend for a To‐Do app and an Expense Tracker
@@ -262,7 +292,9 @@
 
             <div class="grid-item">
                 <div class="project-name">
-                    <a class="project-link" href="https://github.com/onlykingKD/My-Projects/blob/master/MSTC_Project_Notes_Segregation.ipynb" target="_blank">Notes Segregation App</a>
+                    <a class="project-link"
+                        href="https://github.com/onlykingKD/My-Projects/blob/master/MSTC_Project_Notes_Segregation.ipynb"
+                        target="_blank">Notes Segregation App</a>
                 </div>
                 <div class="project-desc">
                     Developed a ML Model using Keras that can be used to segregate the
@@ -284,45 +316,67 @@
 
         <div class="icons">
             <ul>
-                <li><a class="social-icon social-icon--facebook" href="https://www.facebook.com/kaustubh.dwivedi.94/" target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i><div class="tooltip">facebook</div></a></li>
-                <li><a class="social-icon social-icon--twitter" href="https://twitter.com/onlykingKD/" target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i><div class="tooltip">twitter</div></a></li>
-                <li><a class="social-icon social-icon--github" href="https://github.com/onlykingKD/" target="_blank"><i class="fab fa-github" aria-hidden="true"></i><div class="tooltip">GitHub</div></a></li>
-                <li><a class="social-icon social-icon--linkedin" href="https://linkedin.com/in/kaustubhdwivedi1729/" target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i><div class="tooltip">linkedin</div></a></li>
-                <li><a class="social-icon social-icon--instagram" href="https://instagram.com/onlykingkd/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i><div class="tooltip">instagram</div></a></li>
-                <li><a class="social-icon social-icon--envelope" href="mailto:kaustubhdwivedi1729@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i><div class="tooltip">mail</div></a></li>
+                <li><a class="social-icon social-icon--facebook" href="https://www.facebook.com/kaustubh.dwivedi.94/"
+                        target="_blank"><i class="fab fa-facebook" aria-hidden="true"></i>
+                        <div class="tooltip">facebook</div>
+                    </a></li>
+                <li><a class="social-icon social-icon--twitter" href="https://twitter.com/onlykingKD/"
+                        target="_blank"><i class="fab fa-twitter" aria-hidden="true"></i>
+                        <div class="tooltip">twitter</div>
+                    </a></li>
+                <li><a class="social-icon social-icon--github" href="https://github.com/onlykingKD/" target="_blank"><i
+                            class="fab fa-github" aria-hidden="true"></i>
+                        <div class="tooltip">GitHub</div>
+                    </a></li>
+                <li><a class="social-icon social-icon--linkedin" href="https://linkedin.com/in/kaustubhdwivedi1729/"
+                        target="_blank"><i class="fab fa-linkedin" aria-hidden="true"></i>
+                        <div class="tooltip">linkedin</div>
+                    </a></li>
+                <li><a class="social-icon social-icon--instagram" href="https://instagram.com/onlykingkd/"
+                        target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i>
+                        <div class="tooltip">instagram</div>
+                    </a></li>
+                <li><a class="social-icon social-icon--envelope" href="mailto:kaustubhdwivedi1729@gmail.com"
+                        target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <div class="tooltip">mail</div>
+                    </a></li>
             </ul>
         </div>
-       
+
         <div class="counter">
             <div class="head">Total Website Visit</div>
             <div class="count">00</div>
         </div>
 
         <style>
-            .head , .count 
-            {
-            text-align: center;
-            width: 10%;
-             height: 10%;
-             margin-left: auto;
-             margin-right: auto;
-             border: 3px solid black;
-            background-color: rgb(211, 143, 202);
+            .head,
+            .count {
+                text-align: center;
+                width: 10%;
+                height: 10%;
+                margin-left: auto;
+                margin-right: auto;
+                border: 3px solid black;
+                background-color: rgb(211, 143, 202);
             }
         </style>
 
         <script>
             function updateCounter() {
-             fetch('https://api.countapi.xyz/update/uimonk/youtubechannel/?amount=1')
-            .then(res => res.json())
-            .then(data => counterElement.innerHTML = data.value)
+                fetch('https://api.countapi.xyz/update/uimonk/youtubechannel/?amount=1')
+                    .then(res => res.json())
+                    .then(data => counterElement.innerHTML = data.value)
             }
             updateCounter()
             counterElement = document.getElementsByClassName('count')[0];
         </script>
         <!-- gsap animation script tag -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js" integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js" integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+            integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"
+            integrity="sha512-CPA5LMoJI/a5HkSIAKcBtFXe4gqGjPUL2ExF/3PmhrrHI17wod9xOqqF+0WZQRKIIq0KwF8oG5BaiWobtrke3A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <!-- javascript script tag -->
         <script src="./app.js"></script>
 
