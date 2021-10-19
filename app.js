@@ -71,17 +71,16 @@ function scrollFunction() {
 }
 
 //Get the button:
-mybutton = document.getElementById("myBtn");
+var mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
+//When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-    } else {
-        mybutton.style.display = "none";
-    }
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
+        mybutton.classList.add('shown')
+    else
+        mybutton.classList.remove('shown')
 }
 
 // When the user clicks on the button, scroll to the top of the document
