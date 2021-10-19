@@ -56,8 +56,8 @@ https://onlykingkd.github.io/portfolio/
 <br>19. [Vignesh](https://github.com/vignesh3398 "View Profile")
 -->
 
-<a href="https://github.com/onlykingKD/portfolio/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=onlykingKD/portfolio&max=180" />
+<a href="https://github.com/onlykingkd/portfolio/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=onlykingkd/portfolio" />
 </a>
 
 <h2 align="center">
