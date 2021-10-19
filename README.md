@@ -7,7 +7,6 @@ https://onlykingkd.github.io/portfolio/
 ![](https://avatars.githubusercontent.com/u/55577276?s=80&v=4)
 <br>1. [Kaustubh Dwivedi](https://github.com/onlykingKD "View Profile")
 
-<br>[Aashish Pradhan](https://github.com/120EE0692 "View Profile")
 
 <br>![](https://avatars.githubusercontent.com/u/82169120?s=80&v=4)
 <br>2. [Aman Yadav](https://github.com/aman-netizen "View Profile")
@@ -52,4 +51,6 @@ https://onlykingkd.github.io/portfolio/
 <br>![](https://avatars.githubusercontent.com/u/72358736?s=80&v=4)
 <br>17. [Tanmay Misra](https://github.com/primeTanM "View Profile")
 
-<br>18. [Vignesh](https://github.com/vignesh3398 "View Profile")
+<br>18. [Aashish Pradhan](https://github.com/120EE0692 "View Profile")
+
+<br>19. [Vignesh](https://github.com/vignesh3398 "View Profile")
