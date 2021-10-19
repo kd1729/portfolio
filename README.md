@@ -3,7 +3,7 @@
 https://onlykingkd.github.io/portfolio/
 
 # Contributors
-
+<!--
 ![](https://avatars.githubusercontent.com/u/55577276?s=80&v=4)
 <br>1. [Kaustubh Dwivedi](https://github.com/onlykingKD "View Profile")
 
@@ -54,3 +54,14 @@ https://onlykingkd.github.io/portfolio/
 <br>18. [Aashish Pradhan](https://github.com/120EE0692 "View Profile")
 
 <br>19. [Vignesh](https://github.com/vignesh3398 "View Profile")
+-->
+
+<a href="https://github.com/onlykingKD/portfolio/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=onlykingKD/portfolio&max=180" />
+</a>
+
+<h2 align="center">
+    <p>
+        Thank You
+    </p>
+</h2>
