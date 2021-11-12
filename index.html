@@ -18,22 +18,7 @@
 </head>
 
 <body>
-    <!-- NavBar -->
-    <!-- <nav id='navbar'>
-        <div id="logo">
-            <a target="blank" href="https://github.com/onlykingKD">
-                @onlykingKD
-            </a>
-        </div>
-        <div id="links">
-            <a href="#home">Home</a>
-            <a href='#about'>About Me</a>
-            <a href='#strengths'>Strengths</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contactme">Contact Me</a>
-        </div>
-    </nav> -->
+
     <header>
         <h2 class='logo'>
             <a target="blank" href="https://github.com/onlykingKD">
@@ -60,7 +45,6 @@
     <!-- CSS Code -->
     <style>
         h3.first-b {
-            /* margin:0px; */
             animation: type 3s steps(23);
             overflow: hidden;
             white-space: nowrap;
@@ -123,8 +107,8 @@
             </p>
             <br>
             <p class="stagger">
-                I have done a few projects in Machine Learning, Deep Learning and NLP.
-                Currently I am working on FrontEnd Projects.
+                I have done a projects in Machine Learning, Deep Learning and NLP.
+                Currently I am working on FrontEnd Projects (ReactJS).
                 In coming days I will learn Backend and probably Linux and DevOps also.
             </p>
             <br>
@@ -231,7 +215,7 @@
                     <li class="skill-3">Natural Lang. Proc.</li>
                     <li class="skill-3">Neural Networks</li>
                     <li class="skill-3">Tensorflow</li>
-                    <li class="skill-3">Jupyter Notebooks</li>
+                    <li class="skill-3">Open CV</li>
                 </ul>
             </div>
 
@@ -241,7 +225,7 @@
                     <li>Linux</li>
                     <li>GIT</li>
                     <li>AWS</li>
-                    <li>MySQL</li>
+                    <li>Firebase</li>
                     <li>OOPS+OS+DBMS</li>
                 </ul>
             </div>
@@ -281,12 +265,13 @@
 
             <div class="grid-item">
                 <div class="project-name">
-                    <a class="project-link" href="https://musing-galileo-621b67.netlify.app/"
-                        target="_blank">Expense Tracker and To-Do App using ReactJS</a>
+                    <a class="project-link" href="https://github.com/onlykingKD/multiuser_todoApp_from_scratch"
+                        target="_blank">Multi-user Todo App using React and Firebase</a>
                 </div>
                 <div class="project-desc">
-                    Created a simple frontend for a To‐Do app and an Expense Tracker
-                    app using ReactJS ContextAPI.
+                    Developed a multi‐user todo app with signup and login functionality
+                    using Firebase Authentication. Various users can view and modify
+                    their todo‐Lists. Used Google Firestore for storing users data
                 </div>
             </div>
 
@@ -306,11 +291,11 @@
 
     <div class="contact" id="contactme">
         <h2>Contact Me</h2>
-        <form action="?https://formspree.io/f/mqkwgovb" method="POST">
+        <form action="https://formspree.io/f/mqkwgovb" method="POST">
             <input name="name" type="text" class="feedback-input scroll" placeholder="Name" />
             <input name="email" type="text" class="feedback-input scroll" placeholder="Email" />
             <textarea name="text" class="feedback-input scroll" placeholder="Comment"></textarea>
-            <input type="submit" value="SUBMIT" class="scroll" onclick="handlesubmit()" />
+            <input type="submit" value="SUBMIT" class="scroll"/>
         </form>
         <!-- social icons -->
 
@@ -343,7 +328,7 @@
             </ul>
         </div>
 
-        <div class="counter">
+        <!-- <div class="counter">
             <div class="head">Total Website Visit</div>
             <div class="count">00</div>
         </div>
@@ -356,7 +341,8 @@
             }
             updateCounter()
             counterElement = document.getElementsByClassName('count')[0];
-        </script>
+        </script> -->
+        
         <!-- gsap animation script tag -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
             integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
