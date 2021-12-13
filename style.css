@@ -228,6 +228,12 @@ body {
   Strengths
   --------------------------------------------------->
 */
+
+.link-on-heading, .link-on-heading:hover, .link-on-heading:active, .link-on-heading:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 .strengths {
   font-family: 'Roboto Slab', serif;
   padding: 4rem 0;
