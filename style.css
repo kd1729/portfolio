@@ -500,13 +500,6 @@ li {
 }
 
 
-
-
-
-
-
-
-
 /*
   --------------------------------------------------->
   Contact me [Footer]
@@ -817,6 +810,12 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
   }
+  .experience-list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0.8rem;
+    padding: 3rem 3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -904,6 +903,33 @@ textarea {
     padding: 2rem 3rem;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0;
+  }
+
+  .experience-list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0.8rem;
+    padding: 3.5rem 2.5rem;
+  }
+
+  .experience-heading {
+    font-size: 3rem;
+    padding-top: 3rem;
+  }
+  
+  .time-period {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+  .experience-name {
+    font-size: 1.7rem;
+    padding-left: 0.4rem;
+    padding-top: 0.4rem;
+  }
+  
+  .responsibilities {
+    font-size: 1.4rem;
   }
 
   .icons a img {
@@ -997,10 +1023,40 @@ textarea {
     grid-gap: 0.5rem;
   }
 
+  .experience-list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+    column-gap: 0.7rem;
+    padding: 3rem 2rem;
+  }
+
+  .experience-heading {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+  
+  .time-period {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .experience-name {
+    font-size: 1.5rem;
+    padding-left: 0.3rem;
+    padding-top: 0.3rem;
+  }
+  
+  .responsibilities {
+    font-size: 1.2rem;
+  }
+  
+  
   form {
     max-width: 400px;
     margin: 2% 2% 2% 2%;
   }
+  
 
   .icons ul {
     margin: 0.25rem auto;
