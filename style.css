@@ -182,8 +182,29 @@ body {
 /*
   --------------------------------------------------->
   About me
+
+  
   --------------------------------------------------->
 */
+
+h3.first-b {
+  animation: type 3s steps(23);
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 4px solid black;
+  width: 23ch;
+}
+
+@keyframes type {
+  0% {
+      width: 0ch;
+  }
+
+  100% {
+      width: 23ch;
+  }
+}
 
 .intro {
   display: flex;
@@ -414,6 +435,77 @@ li {
   margin-left: 8%;
   margin-right: 8%;
 }
+
+/*
+  --------------------------------------------------->
+ Experience
+  --------------------------------------------------->
+*/
+
+.experience {
+  font-family: 'Roboto Slab', serif;
+  background-color: #3d6694;
+}
+
+.experience-list{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 1rem;
+  column-gap: 1rem;
+  padding: 4rem 3rem;
+}
+
+
+.experience-heading {
+  font-size: 3.5rem;
+  text-decoration: underline;
+  color: #e6d5d5;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.time-period {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem auto;
+  color: #ebc9c9;
+}
+
+.experience-text {
+  font-weight: 400;
+  border-radius: 10px;
+  margin: 3% 8%;
+  padding: 3% 5%;
+}
+
+.experience-text:hover {
+  position: relative;
+  bottom: 7px;
+  left: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.experience-name {
+  color: #fffffff1;
+  font-size: 2rem;
+  padding-left: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.responsibilities {
+  color: #dbcbbd;
+  font-size: 1.6rem;
+}
+
+
+
+
+
+
+
+
 
 /*
   --------------------------------------------------->
