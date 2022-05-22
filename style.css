@@ -209,8 +209,8 @@ h3.first-b {
 .intro {
   display: flex;
   align-items: center;
-  background-color: #2b3f4b;
-  color: #d8d5c5;
+  background-color: #2f4b5c;
+  color: #e1f1f1;
   justify-content: space-around;
   font-family: 'Roboto Slab', serif;
   margin: 5rem 9rem;
@@ -222,7 +222,7 @@ h3.first-b {
 }
 
 .intro-head {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-decoration: underline;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -230,12 +230,11 @@ h3.first-b {
 }
 
 .intro-text {
-  background-color: transparent;
   letter-spacing: 3px;
   text-align: center;
   font-size: 1.4rem;
-  font-weight: bold;
   padding: 3rem 1rem;
+  font-weight: 500;
 }
 
 .intro img {
@@ -397,13 +396,10 @@ li {
 
 .grid-item {
   letter-spacing: 1.1px;
-  background-color: #1f3b4b;
-  border: 2px solid rgba(0, 0, 0, 0.8);
   min-height: 10rem;
   margin: 1rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 5px 4px 8px 1px #000000;
   padding-bottom: 0.5rem;
   border-radius: 10px;
   box-sizing: border-box;
@@ -450,8 +446,6 @@ li {
 .experience-list{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 1rem;
-  column-gap: 1rem;
   padding: 4rem 3rem;
 }
 
@@ -490,7 +484,7 @@ li {
 .experience-name {
   color: #fffffff1;
   font-size: 2rem;
-  padding-left: 0.5rem;
+  /* padding-left: 0.5rem; */
   padding-top: 0.5rem;
 }
 
