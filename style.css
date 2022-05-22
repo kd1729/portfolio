@@ -494,6 +494,11 @@ li {
   padding-top: 0.5rem;
 }
 
+.link-on-experience, .link-on-experience:hover, .link-on-experience:active, .link-on-experience:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 .responsibilities {
   color: #dbcbbd;
   font-size: 1.6rem;
