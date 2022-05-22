@@ -182,14 +182,35 @@ body {
 /*
   --------------------------------------------------->
   About me
+
+  
   --------------------------------------------------->
 */
+
+h3.first-b {
+  animation: type 3s steps(23);
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: consolas;
+  border-right: 4px solid black;
+  width: 23ch;
+}
+
+@keyframes type {
+  0% {
+      width: 0ch;
+  }
+
+  100% {
+      width: 23ch;
+  }
+}
 
 .intro {
   display: flex;
   align-items: center;
-  background-color: #2b3f4b;
-  color: #d8d5c5;
+  background-color: #2f4b5c;
+  color: #e1f1f1;
   justify-content: space-around;
   font-family: 'Roboto Slab', serif;
   margin: 5rem 9rem;
@@ -201,7 +222,7 @@ body {
 }
 
 .intro-head {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-decoration: underline;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -209,12 +230,11 @@ body {
 }
 
 .intro-text {
-  background-color: transparent;
   letter-spacing: 3px;
   text-align: center;
   font-size: 1.4rem;
-  font-weight: bold;
   padding: 3rem 1rem;
+  font-weight: 500;
 }
 
 .intro img {
@@ -376,13 +396,10 @@ li {
 
 .grid-item {
   letter-spacing: 1.1px;
-  background-color: #1f3b4b;
-  border: 2px solid rgba(0, 0, 0, 0.8);
   min-height: 10rem;
   margin: 1rem;
   text-align: center;
   border-radius: 3px;
-  box-shadow: 5px 4px 8px 1px #000000;
   padding-bottom: 0.5rem;
   border-radius: 10px;
   box-sizing: border-box;
@@ -414,6 +431,73 @@ li {
   margin-left: 8%;
   margin-right: 8%;
 }
+
+/*
+  --------------------------------------------------->
+ Experience
+  --------------------------------------------------->
+*/
+
+.experience {
+  font-family: 'Roboto Slab', serif;
+  background-color: #3d6694;
+}
+
+.experience-list{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 4rem 3rem;
+}
+
+
+.experience-heading {
+  font-size: 3.5rem;
+  text-decoration: underline;
+  color: #e6d5d5;
+  padding-top: 4rem;
+  text-align: center;
+}
+
+.time-period {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 1rem auto;
+  color: #ebc9c9;
+}
+
+.experience-text {
+  font-weight: 400;
+  border-radius: 10px;
+  margin: 3% 8%;
+  padding: 3% 5%;
+}
+
+.experience-text:hover {
+  position: relative;
+  bottom: 7px;
+  left: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+}
+
+.experience-name {
+  color: #fffffff1;
+  font-size: 2rem;
+  /* padding-left: 0.5rem; */
+  padding-top: 0.5rem;
+}
+
+.link-on-experience, .link-on-experience:hover, .link-on-experience:active, .link-on-experience:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+.responsibilities {
+  color: #dbcbbd;
+  font-size: 1.6rem;
+}
+
 
 /*
   --------------------------------------------------->
@@ -725,6 +809,12 @@ textarea {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
   }
+  .experience-list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0.8rem;
+    padding: 3rem 3rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -812,6 +902,33 @@ textarea {
     padding: 2rem 3rem;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 0;
+  }
+
+  .experience-list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 0.8rem;
+    padding: 3.5rem 2.5rem;
+  }
+
+  .experience-heading {
+    font-size: 3rem;
+    padding-top: 3rem;
+  }
+  
+  .time-period {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  
+  .experience-name {
+    font-size: 1.7rem;
+    padding-left: 0.4rem;
+    padding-top: 0.4rem;
+  }
+  
+  .responsibilities {
+    font-size: 1.4rem;
   }
 
   .icons a img {
@@ -905,10 +1022,40 @@ textarea {
     grid-gap: 0.5rem;
   }
 
+  .experience-list{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+    column-gap: 0.7rem;
+    padding: 3rem 2rem;
+  }
+
+  .experience-heading {
+    font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+  
+  .time-period {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .experience-name {
+    font-size: 1.5rem;
+    padding-left: 0.3rem;
+    padding-top: 0.3rem;
+  }
+  
+  .responsibilities {
+    font-size: 1.2rem;
+  }
+  
+  
   form {
     max-width: 400px;
     margin: 2% 2% 2% 2%;
   }
+  
 
   .icons ul {
     margin: 0.25rem auto;
@@ -1014,11 +1161,12 @@ nav a {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
-  transition: opacity 250ms ease-in-out 250ms;
+  padding: 0.5rem;
+  transition: font-size 500ms ease-in-out;
 }
 nav ul li a:hover {
-  color: black;
-  background-color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 #btn-toggle {
   display: none;
