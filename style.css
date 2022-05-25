@@ -795,9 +795,47 @@ textarea {
   --------------------------------------------------->
 */
 
+/*  Macbook : 1440px */
+@media (max-width: 1500px) {
+  .intro-head{
+    font-size: 2rem;  
+  }
+
+  .intro-text{
+    font-size: 1.1rem;
+  }
+  .intro img {
+    width: 30%;
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .intro-head{
+    font-size: 2rem;  
+  }
+
+  .intro-text{
+    font-size: 1rem;
+  }
+  .intro img {
+    width: 35%;
+    margin-top: 5%;
+  }
+}
+
 @media (max-width: 1000px) {
   .intro {
     flex-direction: column;
+  }
+
+  .intro-text{
+    font-size: 1.2rem;
+  }
+
+  .intro img {
+    width: 50%;
+    margin-top: 0%;
   }
 
   .skills-text {
@@ -815,6 +853,7 @@ textarea {
     column-gap: 0.8rem;
     padding: 3rem 3rem;
   }
+  
 }
 
 @media (max-width: 768px) {
