@@ -69,3 +69,18 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+function closeToggle(){
+   var myCheckbox = document.getElementById("btn-toggle");
+    if(myCheckbox.checked){
+        myCheckbox.checked = false;
+    }
+}
+
+document.querySelectorAll('nav ul li').forEach(function(el){
+    el.addEventListener('click', function(){
+        var myCheckbox = document.getElementById("btn-toggle");
+        if(myCheckbox.checked)
+            myCheckbox.checked = false;
+    })
+})
