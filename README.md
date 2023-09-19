@@ -1,6 +1,6 @@
 # Portfolio
 ### Feel free to take a look at my portfolio <br>
-https://onlykingkd.github.io/portfolio/
+https://kd1729.github.io/portfolio/
 
 # Contributors (contributed during Hacktoberfest 2021)
 
