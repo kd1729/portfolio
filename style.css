@@ -29,7 +29,7 @@ body {
   --------------------------------------------------->
 */
 .main {
-  background-image: url('./images/R.jpeg');
+  background-image: url("./images/R.jpeg");
   color: antiquewhite;
   display: flex;
   flex-direction: column;
@@ -41,7 +41,7 @@ body {
 
 .first {
   margin-top: 7rem;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 .first-a {
@@ -102,7 +102,7 @@ body {
 }
 
 .myButton {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   background-color: #f81c03;
   border-radius: 10px;
@@ -136,7 +136,7 @@ body {
   letter-spacing: 2px;
 }
 .fade {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
 }
 /* Scroll icon */
 
@@ -157,7 +157,7 @@ body {
 }
 
 .icon-scroll:before {
-  content: '';
+  content: "";
   width: 8px;
   height: 8px;
   background: #fff;
@@ -198,11 +198,11 @@ h3.first-b {
 
 @keyframes type {
   0% {
-      width: 0ch;
+    width: 0ch;
   }
 
   100% {
-      width: 23ch;
+    width: 23ch;
   }
 }
 
@@ -212,13 +212,16 @@ h3.first-b {
   background-color: #2f4b5c;
   color: #e1f1f1;
   justify-content: space-around;
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   margin: 5rem 9rem;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px,
+    rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px,
+    rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .intro-head {
@@ -245,26 +248,38 @@ h3.first-b {
 
 /*
   --------------------------------------------------->
-  Strengths
+  Strengths and Skills
   --------------------------------------------------->
 */
 
-.link-on-heading, .link-on-heading:hover, .link-on-heading:active, .link-on-heading:visited {
+.link-on-heading,
+.link-on-heading:hover,
+.link-on-heading:active,
+.link-on-heading:visited {
   text-decoration: none;
   color: inherit;
 }
 
-.strengths {
-  font-family: 'Roboto Slab', serif;
+.strengths,
+.skills {
+  font-family: "Roboto Slab", serif;
   padding: 4rem 0;
+}
+
+.strengths {
   background-color: #2b3f4b;
 }
 
-.strength-card {
+.skills {
+  background-color: #3d6694;
+}
+
+.strength-card,
+.skill-card {
   align-self: center;
   justify-self: center;
   text-align: center;
-  background-color: #2b3f4b;
+  background-color: inherit;
   color: #fae1e1;
   min-height: 300px;
   max-width: 270px;
@@ -273,50 +288,7 @@ h3.first-b {
   padding: 1.3rem;
 }
 
-.strengths-heading {
-  color: #dbcbbd;
-  text-align: center;
-  font-size: 3.2rem;
-  padding: 1rem;
-  text-decoration: underline;
-  margin-bottom: 1rem;
-}
-
-.strength-name {
-  font-size: 2rem;
-  padding-bottom: 1rem;
-}
-
-.strengths-text {
-  letter-spacing: 1px;
-  font-size: 1.2rem;
-  display: grid;
-  align-items: center;
-  justify-content: center;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 0.2rem;
-}
-
-.strength-card:hover {
-  position: relative;
-  bottom: 7px;
-  left: 5px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-/*
-  --------------------------------------------------->
-  SKills
-  --------------------------------------------------->
-*/
-
-.skills {
-  background-color: #3d6694;
-  font-family: 'Roboto Slab', serif;
-  padding: 4rem 0;
-}
-
+.strengths-heading,
 .skills-heading {
   color: #dbcbbd;
   text-align: center;
@@ -326,53 +298,52 @@ h3.first-b {
   margin-bottom: 1rem;
 }
 
+.strength-name,
 .skill-name {
   font-size: 2rem;
-  padding-left: 0.5rem;
-  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+.skill-name {
+  padding-left: 1rem;
 }
 
-.skills-text {
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.5rem;
-  display: flex;
-  flex-wrap: wrap;
+.strengths-text,
+.skills-container {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0.2rem;
 }
 
-.skill-card {
-  align-self: center;
-  justify-self: center;
-  background-color: transparent;
-  color: #fae1e1;
-  min-height: 250px;
-  width: 300px;
-  box-sizing: border-box;
-  flex: 1;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px; 
-}
-.skill-list {
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
+.skills-container {
+  padding: 0 1rem 0 0;
 }
 
+.skill-card ul {
+  display: block;
+  list-style-type: disc;
+  margin: 0;
+  padding: 0 0 0 1em;
+}
+
+.skill-card li {
+  display: list-item;
+  margin-bottom: 0.5rem;
+  list-style: none;
+}
+
+.strength-card:hover,
 .skill-card:hover {
   position: relative;
   bottom: 7px;
   left: 5px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-}
-
-ul {
-  list-style-position: inside;
-}
-
-li {
-  padding-left: 1rem;
-  font-size: 1.4rem;
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 /*
@@ -382,7 +353,7 @@ li {
 */
 
 .projects {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   background-color: #2b3f4b;
 }
 
@@ -447,16 +418,15 @@ li {
 */
 
 .experience {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   background-color: #3d6694;
 }
 
-.experience-list{
+.experience-list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 4rem 3rem;
 }
-
 
 .experience-heading {
   font-size: 3.5rem;
@@ -484,9 +454,10 @@ li {
   position: relative;
   bottom: 7px;
   left: 5px;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-
+  box-shadow:
+    rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .experience-name {
@@ -496,7 +467,10 @@ li {
   padding-top: 0.5rem;
 }
 
-.link-on-experience, .link-on-experience:hover, .link-on-experience:active, .link-on-experience:visited {
+.link-on-experience,
+.link-on-experience:hover,
+.link-on-experience:active,
+.link-on-experience:visited {
   text-decoration: none;
   color: inherit;
 }
@@ -506,7 +480,6 @@ li {
   font-size: 1.6rem;
 }
 
-
 /*
   --------------------------------------------------->
   Contact me [Footer]
@@ -514,11 +487,11 @@ li {
 */
 
 .contact {
-  background-image: url('./images/R.jpeg');
+  background-image: url("./images/R.jpeg");
 }
 
 .contact h2 {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   padding-top: 2rem;
   color: rgb(211, 143, 202);
   text-align: center;
@@ -558,8 +531,8 @@ textarea {
   resize: vertical;
 }
 
-[type='submit'] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+[type="submit"] {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   width: 100%;
   background: #cc6666;
   border-radius: 5px;
@@ -575,7 +548,7 @@ textarea {
   font-weight: 700;
 }
 
-[type='submit']:hover {
+[type="submit"]:hover {
   background: #cc4949;
 }
 
@@ -686,7 +659,7 @@ textarea {
   left: 50%;
   width: 0;
   height: 0;
-  content: '';
+  content: "";
   border: solid;
   border-width: 10px 10px 0 10px;
   border-color: transparent;
@@ -780,7 +753,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   background-color: #3d6694;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: azure;
   border: 1.5px solid #2b3f4b;
 }
@@ -792,7 +765,7 @@ textarea {
   margin-left: auto;
   margin-right: auto;
   background-color: #3d6694;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: azure;
   border: 1.5px solid #2b3f4b;
 }
@@ -805,11 +778,11 @@ textarea {
 
 /*  Macbook : 1440px */
 @media (max-width: 1500px) {
-  .intro-head{
-    font-size: 2rem;  
+  .intro-head {
+    font-size: 2rem;
   }
 
-  .intro-text{
+  .intro-text {
     font-size: 1.1rem;
   }
   .intro img {
@@ -819,11 +792,11 @@ textarea {
 }
 
 @media (max-width: 1300px) {
-  .intro-head{
-    font-size: 2rem;  
+  .intro-head {
+    font-size: 2rem;
   }
 
-  .intro-text{
+  .intro-text {
     font-size: 1rem;
   }
   .intro img {
@@ -832,12 +805,26 @@ textarea {
   }
 }
 
+@media (max-width: 1100px) {
+  .strengths-text,
+  .skills-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .strengths-text {
+    padding: 0 2rem;
+  }
+  .skills-container {
+    padding: 0 2rem 0 0;
+  }
+}
+
 @media (max-width: 1000px) {
   .intro {
     flex-direction: column;
   }
 
-  .intro-text{
+  .intro-text {
     font-size: 1.2rem;
   }
 
@@ -846,22 +833,12 @@ textarea {
     margin-top: 0%;
   }
 
-  .skills-text {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-  }
-
-  .strengths-text {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-  }
-  .experience-list{
+  .experience-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 0.8rem;
     padding: 3rem 3rem;
   }
-  
 }
 
 @media (max-width: 768px) {
@@ -951,7 +928,7 @@ textarea {
     grid-gap: 0;
   }
 
-  .experience-list{
+  .experience-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: 0.8rem;
@@ -962,18 +939,18 @@ textarea {
     font-size: 3rem;
     padding-top: 3rem;
   }
-  
+
   .time-period {
     font-size: 1.4rem;
     font-weight: 600;
   }
-  
+
   .experience-name {
     font-size: 1.7rem;
     padding-left: 0.4rem;
     padding-top: 0.4rem;
   }
-  
+
   .responsibilities {
     font-size: 1.4rem;
   }
@@ -1059,17 +1036,13 @@ textarea {
     padding: 1rem 0.5rem;
   }
 
-  .strengths-text {
+  .strengths-text,
+  .skills-container {
     grid-template-columns: repeat(1, 2fr);
     grid-gap: 0.5rem;
   }
 
-  .skills-text {
-    grid-template-columns: repeat(1, 2fr);
-    grid-gap: 0.5rem;
-  }
-
-  .experience-list{
+  .experience-list {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 1rem;
@@ -1081,28 +1054,26 @@ textarea {
     font-size: 2.5rem;
     padding-top: 2rem;
   }
-  
+
   .time-period {
     font-size: 1.2rem;
     font-weight: 600;
   }
-  
+
   .experience-name {
     font-size: 1.5rem;
     padding-left: 0.3rem;
     padding-top: 0.3rem;
   }
-  
+
   .responsibilities {
     font-size: 1.2rem;
   }
-  
-  
+
   form {
     max-width: 400px;
     margin: 2% 2% 2% 2%;
   }
-  
 
   .icons ul {
     margin: 0.25rem auto;
@@ -1140,7 +1111,7 @@ textarea {
   font-size: 25px;
 }
 
-#myBtn.shown{
+#myBtn.shown {
   right: 30px;
 }
 
@@ -1171,7 +1142,7 @@ textarea {
   padding: 0;
 }
 header {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
   position: absolute;
   top: 0;
   background: var(--bg-color);
@@ -1188,7 +1159,6 @@ header h2 a {
   padding: 1rem;
   cursor: pointer;
 }
-
 
 nav {
   position: absolute;
@@ -1244,11 +1214,11 @@ nav ul li a:hover {
 }
 .btn-toggle span::after {
   height: 1.5px;
-  content: '';
+  content: "";
   top: 7px;
 }
 .btn-toggle span::before {
-  content: '';
+  content: "";
   bottom: 8px;
 }
 #btn-toggle:checked ~ .btn-toggle {
@@ -1294,7 +1264,7 @@ nav ul li a:hover {
     position: relative;
   }
   nav a::after {
-    content: '';
+    content: "";
     position: absolute;
     height: 3px;
     width: 100%;
