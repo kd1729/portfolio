@@ -333,9 +333,10 @@ h3.first-b {
 }
 
 .skills-text {
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .skill-card {
@@ -345,9 +346,16 @@ h3.first-b {
   color: #fae1e1;
   min-height: 250px;
   width: 300px;
-  border-radius: 15px;
   box-sizing: border-box;
-  padding: 1rem;
+  flex: 1;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px; 
+}
+.skill-list {
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .skill-card:hover {
