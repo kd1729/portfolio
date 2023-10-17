@@ -1269,7 +1269,7 @@ nav ul li a:hover {
     height: 3px;
     width: 100%;
     background: black;
-    bottom: -15px;
+    bottom: -14px;
     left: 0.5rem;
     transform: scale(0, 1);
   }
