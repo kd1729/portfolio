@@ -555,7 +555,7 @@ textarea {
 /* Social Media icons  */
 
 .icons ul {
-  margin: 1rem auto;
+  margin-top: 1rem ;
   padding-bottom: 7%;
   display: flex;
   justify-content: center;
