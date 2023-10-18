@@ -2,7 +2,7 @@
 ### Feel free to take a look at my portfolio <br>
 https://kd1729.github.io/portfolio/
 
-# Contributors (contributed during Hacktoberfest 2021)
+# Contributors (contributed during Hacktoberfest-2021 and Hacktoberfest-2023)
 
 <a href="https://github.com/onlykingkd/portfolio/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=onlykingkd/portfolio" />
