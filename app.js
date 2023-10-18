@@ -84,3 +84,16 @@ document.querySelectorAll('nav ul li').forEach(function(el){
             myCheckbox.checked = false;
     })
 })
+
+// Fixing the movement of whole header when one element is hovered over in navbar
+// document.querySelectorAll('nav ul li a').forEach(function(el){
+//     el.addEventListener('mouseover', function(){
+//         document.querySelectorAll('nav ul li a').classList.add('hovered');
+
+//     })
+// })  
+// document.querySelectorAll('nav ul li a').forEach(function(el){
+//     el.addEventListener('mouseout', function(){
+//         document.querySelectorAll('nav ul li a').classList.remove('hovered');
+//     })
+// })
