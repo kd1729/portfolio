@@ -405,7 +405,7 @@ h3.first-b {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   row-gap: 1rem;
   column-gap: 1rem;
   padding: 4rem 3rem;
@@ -443,7 +443,7 @@ h3.first-b {
 
 .project-desc {
   color: #fffffff1;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 400;
   margin-left: 8%;
   margin-right: 8%;
@@ -896,6 +896,13 @@ textarea {
   }
   .skills-container {
     padding: 0 2rem 0 0;
+  }
+
+  .grid-container{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .project-desc{
+    font-size: 1.4rem;
   }
 }
 
