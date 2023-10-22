@@ -449,6 +449,26 @@ h3.first-b {
   margin-right: 8%;
 }
 
+.project-button {
+  background-color: #c06448;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  font-size: 25px;
+  margin: 1em;
+  padding: 10px 20px;
+  box-shadow: 4px 3px 8px 1px #c06448;
+}
+
+.project-button:hover {
+  background-color: #f75858;
+  box-shadow: 4px 3px 8px 1px #f75858;
+}
+
+.project-button a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 /*
   --------------------------------------------------->
  Experience
