@@ -38,7 +38,9 @@ body {
   min-height: 100vh;
   border-bottom: 15px solid #2b3f4b;
 }
-
+p {
+  text-align: justify;
+}
 .first {
   margin-top: 7rem;
   font-family: "Josefin Sans", sans-serif;
