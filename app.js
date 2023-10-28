@@ -97,3 +97,12 @@ document.querySelectorAll('nav ul li').forEach(function(el){
 //         document.querySelectorAll('nav ul li a').classList.remove('hovered');
 //     })
 // })
+
+// Functionality on icon-scroll down
+const scrollToContent = () => {
+    const contentSection = document.getElementById("about");
+    if (contentSection) {
+      contentSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+  
