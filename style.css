@@ -219,12 +219,9 @@ h3.first-b {
   margin: 5rem 9rem;
   padding: 1rem;
   border-radius: 10px;
-  box-shadow:
-    rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px,
-    rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px,
-    rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .intro-head {
@@ -349,10 +346,9 @@ h3.first-b {
     rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 } */
 
-
 .skill-card ul {
   display: block;
-  list-style-type: none; 
+  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -362,15 +358,15 @@ h3.first-b {
   align-items: center;
   margin-bottom: 1rem;
   white-space: nowrap;
-  text-align: left; 
+  text-align: left;
   padding-left: 1.7rem;
   position: relative;
 }
 
 .skill-card li::before {
-  content: "\f058"; 
-  font-family: "Font Awesome 5 Free"; 
-  color: #fae1e1; 
+  content: "\f058";
+  font-family: "Font Awesome 5 Free";
+  color: #fae1e1;
   font-size: 1.2rem;
   position: absolute;
   left: 0;
@@ -380,12 +376,9 @@ h3.first-b {
   position: relative;
   bottom: 7px;
   left: 5px;
-  box-shadow:
-    rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
-
 
 /*
   --------------------------------------------------->
@@ -515,10 +508,8 @@ h3.first-b {
   position: relative;
   bottom: 7px;
   left: 5px;
-  box-shadow:
-    rgba(0, 0, 0, 0.4) 0px 2px 4px,
-    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
-    rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .experience-name {
@@ -554,10 +545,10 @@ h3.first-b {
 }
 
 .experience-text ul li::before {
-  content: '\f105'; 
-  font-family: 'Font Awesome 5 Free';
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: #76fae6; 
+  color: #76fae6;
   position: absolute;
   left: 0;
   top: 4px;
@@ -638,7 +629,7 @@ textarea {
 /* Social Media icons  */
 
 .icons ul {
-  margin-top: 1rem ;
+  margin-top: 1rem;
   padding-bottom: 7%;
   display: flex;
   justify-content: center;
@@ -901,10 +892,10 @@ textarea {
     padding: 0 2rem 0 0;
   }
 
-  .grid-container{
-    grid-template-columns: repeat(2,1fr);
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
   }
-  .project-desc{
+  .project-desc {
     font-size: 1.4rem;
   }
 }
@@ -1256,7 +1247,7 @@ header h2 a {
 }
 
 .logo::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
@@ -1266,7 +1257,6 @@ header h2 a {
   animation: showRight 1s ease forwards;
   animation-delay: 0.4s;
 }
-
 
 nav {
   position: absolute;
@@ -1291,13 +1281,30 @@ nav a {
   color: white;
   font-size: 1.2rem;
   padding: 0.5rem;
-  transition: all 500ms ease-in-out;
+  transition: all 100ms ease-in-out;
+  position: relative;
 }
 nav ul li a:hover {
-  font-weight: bold;
-  font-size: 1.5rem;
+  /* font-weight: bold; */
+  /* font-size: 1.5rem; */
   color: rgba(255, 72, 72, 0.829);
 }
+
+nav a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: rgba(255, 72, 72, 0.829) !important;
+  position: absolute;
+  left: 0;
+  bottom: -0.7px !important;
+  transition: 0.4s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
 #btn-toggle {
   display: none;
 }
